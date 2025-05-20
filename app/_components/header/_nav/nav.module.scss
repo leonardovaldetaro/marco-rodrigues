@@ -1,0 +1,175 @@
+@import '../../../styles/variables';
+@import '../../../styles/breakpoints';
+
+.navbar {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop_sm) {
+}
+}
+
+.menu {
+  display: flex;
+  background: rgba(0, 14, 15, 0.65); // Cor de fundo do menu
+  backdrop-filter: blur(3px); // Aplica o desfoque ao fundo
+  padding: .5em 1em;
+  border-radius: 25px; // Deixa o menu arredondado
+  list-style: none;
+  gap: 24px;
+
+  @media (max-width: $desktop_sm) {
+    padding: 0;
+  }
+
+  &__item {
+    display: block;
+
+    @media (max-width: $desktop_sm) {
+      display: none;
+    }
+  }
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: $text-light;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-complements;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 106, 0, 0) 0%,
+        rgb(8, 152, 255) 50%,
+        rgba(255, 106, 0, 0) 100%);
+    border-radius: 5px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%; // Aparece ao passar o mouse
+  }
+}
+
+.mobileMenuToggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: $text-light;
+
+  @media (max-width: $desktop_sm) {
+    display: block;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    box-shadow: none;
+    padding: .5em 1em;
+
+    &:hover {
+      color: $link-hover; // Muda a cor ao passar o mouse
+    }
+  }
+}
+
+.menuOpenArrow {
+  display: flex;
+  align-items: center;
+  color: $text-light;
+  font-size: 1em;
+  gap: 8px;
+
+  &__icon {
+    color: $text-light;
+    font-size: 1.5em;
+  }
+}
+
+// Aqui começa o menu mobile
+
+.overlay {
+  visibility: hidden; // Invisível por padrão
+  opacity: 0; // Transparente por padrão
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 10, 0.85); // Escurece o fundo com opacidade
+  backdrop-filter: blur(5px); // Aplica o desfoque ao fundo
+  z-index: 9998; // Um nível abaixo do menu mobile
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; // Animação suave
+}
+
+.overlayActive {
+  visibility: visible; // Visível quando ativo
+  opacity: 1; // Opaco quando ativo
+}
+
+.mobileNavMenu {
+  visibility: hidden; // Invisível por padrão
+  opacity: 0; // Transparente por padrão
+  position: fixed;
+  top: 45%;
+  right: 7.5%;
+  width: 85%;
+  padding: 2em;
+  background-color: rgba(0, 14, 64, 0.8);
+  border-radius: 25px;
+  z-index: 9999; // Acima do overlay
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); // Sombra para destacar o menu
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; // Animação suave
+
+  &__close {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 1em;
+
+    &__button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background-color: rgba(27, 43, 55, 1);
+      border: 1px solid rgba(0, 135, 219, .2); // Borda do botão
+      border-radius: 8px; // Bordas arredondadas
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); // Sombra para destacar o botão
+      padding: 0.5em 0.5em;
+      color: $text-dark;
+      font-size: 1.2em;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2em;
+
+    .link {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.visible {
+  visibility: visible; // Visível quando ativo
+  opacity: 1; // Opaco quando ativo
+}

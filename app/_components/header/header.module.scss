@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out; // Animação suave para aparecer/desaparecer
+    background-color:  rgba(0, 14, 15, .4);
+
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.headerVisible {
+    transform: translateY(0); // Totalmente visível
+}
+
+.headerHidden {
+    transform: translateY(-100%); // Escondido fora da tela
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $desktop_sm) {
+    }
+
+
+    &__link {
+        transition: transform 0.4s ease;
+        width: 250px;
+        height: 55px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:focus {
+            transform: scale(1.1);
+        }
+
+    }
+
+    &__img {
+        width: 250px;
+
+        @media (max-width: $desktop_sm) {
+            width: 160px
+        }
+    }
+}
+
