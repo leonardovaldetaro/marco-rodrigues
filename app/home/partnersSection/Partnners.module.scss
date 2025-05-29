@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.partnersSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgb(216, 223, 226);
+
+    width: 100%;
+
+    padding: 2em 8em;
+
+    &__title {
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        font-family: brother-1816, sans-serif;
+        margin-bottom: 1em;
+    }
+}
+ 
+.logosContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 4em;
+}
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 8em;
+    height: 4em;
+
+    &__img {
+        width: 6em;
+    }
+
+}

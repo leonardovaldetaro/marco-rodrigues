@@ -22,11 +22,11 @@ export default function Nav() {
     };
 
     const menuItems = [
-        { label: "About", to: "/about" },
-        { label: "Projects", to: "/projects" },
-        { label: "Posts", to: "/posts" },
-        { label: "Contact", to: "/contact" },
-        { label: "Resume", to: "/resume" },
+        { label: "Palestras", to: "/palestras" },
+        { label: "Coaching", to: "/coaching" },
+        { label: "Livros", to: "/livros" },
+        { label: "Blog", to: "/blog" },
+        { label: "Contactos", to: "/contactos" },
     ];
     return (
         <>

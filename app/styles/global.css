@@ -111,7 +111,7 @@ section {
 }
 
 body {
-	background-color: rgb(250, 250, 250);
+	background-color: rgba(244, 244, 245, 1);
 	font-family: "brother-1816", sans-serif;
 	line-height: 1;
 	display: flex;
