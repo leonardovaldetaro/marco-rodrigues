@@ -15,8 +15,8 @@
     padding: 0 8em;
 
     background: 
-    linear-gradient(rgba(199, 199, 199, 0.5), rgba(221, 221, 221, 0.5)), // overlay escuro
-    url('/assets/mrSimbol.svg') center/cover no-repeat;
+    linear-gradient(rgba(245, 245, 250, 0.6), rgba(230, 230, 235, 1)), // overlay escuro
+    url('/assets/mrSimbol.svg') center/85% no-repeat;
 
     &__content {
         display: flex;
@@ -29,21 +29,30 @@
         h2 {
             font-size: 2em;
             margin-bottom: 0.5em;
-            color: $brand-dark-blue;
-            text-transform: uppercase;
+            color: $text-dark;
+
+            span {
+                background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
         }
 
         h3 {
             font-size: 1.3em;
             margin-bottom: 0.5em;
-            color: $brand-dark-blue;
+            color: $text-dark;
         }
 
         p {
-            font-size: 1.1em;
-            color: $brand-dark-blue;
-            margin-bottom: 1.5em;
+            font-size: 18px;
+            font-weight: 500;
             font-family: "Spectral", serif;
+            line-height: 25px;
+            color: $text-dark;
+            margin-bottom: 1.5em;
         }
     }
 
@@ -58,6 +67,13 @@
         img {
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            }
         }
     }
 }

@@ -5,29 +5,41 @@ import BookImages from 'next/image';
 import BookCoverGuerreiro from '../../../public/assets/um_guerreiro_de_luz.jpg';
 import BookCoverVida from '../../../public/assets/a_vida_acontece_no_meio_do_amor.jpeg';
 import Button from '../../_components/button';
+import Link from 'next/link';
 
 export default function BookSection() {
     return (
         <section className={Styles.bookSection}>
            <article className={Styles.bookSection__content}>
-                <h2 className={Styles.bookSection__title}>Título principal</h2>
-                <h3 className={Styles.bookSection__subtitle}>Subtítulo com um pouco mais de texto para explicar.</h3>
+                <h2 className={Styles.bookSection__title}>Palavras que <br /><span>Transformam</span> Vidas</h2>
+                <h3 className={Styles.bookSection__subtitle}>Histórias reais, coragem autêntica e reflexões transformadoras.</h3>
                 <p className={Styles.bookSection__description}>
-                     This section is dedicated to showcasing the book. It includes a title, description, and images related to the book.
+                     Cada livro é um reflexo da jornada de quem ousa sentir, pensar e agir diferente. Aqui, a leitura não é apenas conteúdo — é convite à consciência, coragem e conexão com o que importa. Descubra ideias que tocam, provocam e despertam o essencial em você.
                 </p>
                 <Button href="/outra-pagina">
-                	Ir para outra página
+                	Leia as sinópses
                     <FiChevronsRight className={Styles.buttonIcon}/>
                 </Button>
            </article>
 
            <div className={Styles.bookSection__images}>
+            <Link 
+                href="https://www.atlanticbookshop.pt/bios/um-guerreiro-de-luz-os-unicos-limites-estao-na-tua-mente"
+                className={Styles.bookSection__imageLink}
+                target="_new"
+            >
                 <BookImages 
                     src={BookCoverGuerreiro}
                         alt="Capa do livro 'Um Guerreiro de Luz'"
                         className={Styles.bookSection__image}
                 />
+            </Link>
 
+            <Link
+                href="https://www.atlanticbookshop.pt/nao-ficcao/a-vida-acontece-no-meio-do-amor"
+                className={Styles.bookSection__imageLink}
+                target="_new"
+            >
                 <BookImages 
                     src={BookCoverVida}
                         alt="Capa do livro 'A Vida Acontece no Meio do Amor'"
@@ -35,6 +47,8 @@ export default function BookSection() {
                         height={386}
                         className={Styles.bookSection__image}
                 />
+            </Link>
+                
            </div>
         </section>
     );

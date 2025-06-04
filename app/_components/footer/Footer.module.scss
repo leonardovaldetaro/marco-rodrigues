@@ -2,7 +2,7 @@
 @import '../../styles/breakpoints';
 
 .footer {
-    background-color: $brand-dark-blue;
+    background-color: $text-dark;
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
         }
 
         p {
-            color: $text-dark;
+            color: $text-light;
             font-family: "Spectral", serif;
             font-size: .8em;
             font-weight: 400;

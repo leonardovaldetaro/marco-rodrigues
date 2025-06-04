@@ -83,6 +83,7 @@ export default function Nav() {
                     <button
                         className={Styles.mobileNavMenu__close__button}
                         onClick={closeMenu} // Fecha o menu ao clicar no botão de fechar
+                        aria-label="Fechar o menu para telemóvel"
                     >
                         <MdClose className={Styles.mobileNavMenu__close__icon} />
                     </button>
