@@ -1,2 +1,78 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints';
+
+.aboutSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $brand-golden;
+    width: 100%;
+    max-width: 1440px;
+    padding: 4em 8em;
+    gap: 3em;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 50%;
+
+        &__icone {
+            margin-bottom: 1em;
+        }
+
+        &__tag {
+            font-size: 24px;
+            font-family: brother-1816, sans-serif;
+            line-height: 25px;
+            color: $text-dark;
+            margin-bottom: 0.5em;
+            display: flex;
+            column-gap: .3em;
+
+            &__icon {
+                color: $brand-red;
+                font-size: 2em;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            font-family: brother-1816, sans-serif;
+            line-height: 35px;
+            color: $text-dark;
+            margin-bottom: .5em;
+
+            span {
+                background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Spectral", serif;
+            line-height: 25px;
+            color: $text-dark;
+            margin-bottom: 1em;
+        }
+    }
+
+    &__image {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.buttonIcon {
+    margin-left: .3rem;
+    width: 2em;
+    height: 2em; 
+}

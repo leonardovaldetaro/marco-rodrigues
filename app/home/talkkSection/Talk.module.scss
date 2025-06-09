@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.talkSection {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 4em 8em;
+
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), // overlay escuro
+    url('/assets/background-talkSection.webp') center/cover no-repeat;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+
+        &__title {
+            color: $brand-golden;
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+
+        &__text {
+            color: $text-light;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 1.5em;
+            text-align: center;
+            font-family: "Spectral", serif;
+        }
+    }
+}
+
+.buttonIcon {
+    margin-left: .3rem;
+    width: 2em;
+    height: 2em; 
+}

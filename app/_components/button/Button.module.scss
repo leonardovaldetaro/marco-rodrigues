@@ -2,17 +2,54 @@
 @import '../../styles/breakpoints';
 
 
-.button {
+.button__primary {
     color: $brand-dark-blue;
     text-decoration: none;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.4s ease;
     display: flex;
     align-items: center;
 
     &:hover {
         text-decoration: underline;
         opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: $text-light;
+    background-color: $brand-dark-blue;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: $brand-golden;
+        transform: scale(1.05);
+    }
+}
+
+.button__secondary {
+    color: $text-light;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+    &:hover {
+        border-bottom: 1px solid $brand-golden;
+        opacity: 0.8;
+        transform: scale(1.1);
     }
 }

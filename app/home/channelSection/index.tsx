@@ -1,3 +1,4 @@
+import ChannelCards from './cards';
 import Styles from './Channel.module.scss';
 import { BsDashLg } from "react-icons/bs";
 
@@ -12,7 +13,7 @@ export default function ChannelSection() {
                     </span>
 
                 <h2 className={Styles.channelSection__title}>O <span>Amor </span>
-                pode mudar<br />uma vida</h2>
+                pode<br /> mudar uma vida</h2>
 
                 <p className={Styles.channelSection__description}>
                     Acreditar no ser humano é o primeiro passo para transformar a realidade. Nesta palestra, Marco Rodrigues partilha uma história de superação, conexão e descoberta interior que inspira a buscar novas direções com coragem e autenticidade.
@@ -25,7 +26,7 @@ export default function ChannelSection() {
             </article>
 
             <article className={Styles.channelSection__cards}>
-
+                <ChannelCards />
             </article>
         </section>
     );
