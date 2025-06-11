@@ -22,8 +22,8 @@ export default function Nav() {
     };
 
     const menuItems = [
+        { label: "Sobre", to: "/sobre" },
         { label: "Palestras", to: "/palestras" },
-        { label: "Coaching", to: "/coaching" },
         { label: "Livros", to: "/livros" },
         { label: "Blog", to: "/blog" },
         { label: "Contactos", to: "/contactos" },

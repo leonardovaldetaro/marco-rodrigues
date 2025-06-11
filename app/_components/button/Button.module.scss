@@ -1,55 +1,65 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints';
 
-
-.button__primary {
-    color: $brand-dark-blue;
-    text-decoration: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-    display: flex;
-    align-items: center;
-
-    &:hover {
-        text-decoration: underline;
-        opacity: 0.8;
-        transform: scale(1.1);
-    }
-}
-
+// Para uso no formulário
 .button {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.5em 1.5em;
-    font-size: 1.2em;
-    font-weight: 500;
-    color: $text-light;
-    background-color: $brand-dark-blue;
+    background-color: $brand-golden;
     border-radius: 0.5em;
+    color: $text-dark;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    font-size: 1.2em;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
     &:hover {
-        background-color: $brand-golden;
-        transform: scale(1.05);
+        transform: scale(1.1);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+
     }
 }
 
-.button__secondary {
-    color: $text-light;
-    text-decoration: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-    display: flex;
+// Para uso em fundo claro
+.button__primary {
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%);
+    border-radius: 0.5em;
+    color: $text-light;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
     &:hover {
-        border-bottom: 1px solid $brand-golden;
-        opacity: 0.8;
         transform: scale(1.1);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+
+    }
+}
+
+// Para uso em fundo escuro
+.button__secondary {
+    align-items: center;
+    background-color: $brand-golden;
+    border-radius: 0.5em;
+    color: $text-dark;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+
     }
 }

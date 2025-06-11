@@ -32,6 +32,7 @@ export default function AboutSection() {
 
                 <Button
                     href="/sobre-mim"
+                    variant='primary'
                 >
                     Conheça a minha história
                     <FiChevronsRight className={Styles.buttonIcon}/>
