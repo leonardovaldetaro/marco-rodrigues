@@ -16,7 +16,10 @@ export default function BookSection() {
                 <p className={Styles.bookSection__description}>
                      Cada livro é um reflexo da jornada de quem ousa sentir, pensar e agir diferente. Aqui, a leitura não é apenas conteúdo — é convite à consciência, coragem e conexão com o que importa. Descubra ideias que tocam, provocam e despertam o essencial em você.
                 </p>
-                <Button href="/outra-pagina">
+                <Button 
+                    href="/livros"
+                    variant='primary'
+                >
                 	Leia as sinópses
                     <FiChevronsRight className={Styles.buttonIcon}/>
                 </Button>

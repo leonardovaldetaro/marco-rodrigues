@@ -31,7 +31,7 @@ export default function AboutSection() {
                 <p className={Styles.aboutSection__content__text}>Como missão, carrega a certeza de que “toda a gente consegue, independentemente das suas circunstâncias, encontrar a sua própria luz e trazê-la ao mundo.”</p>
 
                 <Button
-                    href="/sobre-mim"
+                    href="/sobre"
                     variant='primary'
                 >
                     Conheça a minha história
