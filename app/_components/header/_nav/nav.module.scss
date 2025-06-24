@@ -5,8 +5,7 @@
   display: flex;
   justify-content: center;
 
-  @media (min-width: $desktop_sm) {
-}
+  @media (min-width: $desktop_sm) {}
 }
 
 .menu {
@@ -155,6 +154,11 @@
       color: $text-dark;
       font-size: 1.2em;
     }
+
+    &__icon {
+        color: $text-light;
+        font-size: 1.5em;
+      }
   }
 
   &__list {
