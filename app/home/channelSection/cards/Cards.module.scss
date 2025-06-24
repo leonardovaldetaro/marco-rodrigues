@@ -4,6 +4,10 @@
 .channelSection__cards {
     padding-right: 8em;
 
+    @media (max-width: $desktop_sm) {
+            padding: 0;
+        }
+
     &__title {
         font-size: 24px;
         font-family: brother-1816, sans-serif;

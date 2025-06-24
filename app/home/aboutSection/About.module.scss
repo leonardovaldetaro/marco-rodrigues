@@ -11,11 +11,20 @@
     padding: 4em 8em;
     gap: 3em;
 
+    @media (max-width: $desktop_sm) {
+            padding: 4em 1em;
+            flex-direction: column;
+        }
+
     &__content {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         width: 50%;
+
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+        }
 
         &__icone {
             margin-bottom: 1em;

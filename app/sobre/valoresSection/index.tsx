@@ -4,7 +4,7 @@ import valoresImage from '../../../public/assets/valores-marco-rodrigues2.webp';
 
 export default function ValoresSection() {
     return (
-        <section className={Styles.valoresSection} aria-labelledby="Os Valores de Marco Rodrigues">
+        <section className={Styles.valoresSection}>
             <div className={Styles.valoresSection__container}>
                 <article className={Styles.valoresSection__container__content}>
                     <h2 className={Styles.valoresSection__container__content__title}>
@@ -36,7 +36,7 @@ export default function ValoresSection() {
                 <figure className={Styles.valoresSection__container__image}>
                     <Image
                         src={valoresImage}
-                        alt="Marco Rodrigues Coach"
+                        alt="Marco Rodrigues em momento de escuta descontraída, despertando autoconfiança na conversa."
                         className={Styles.valoresSection__container__image__img}
                         width={500}
                         height={500}
