@@ -12,9 +12,9 @@
     gap: 3em;
 
     @media (max-width: $desktop_sm) {
-            padding: 4em 1em;
-            flex-direction: column;
-        }
+        padding: 4em 1em;
+        flex-direction: column;
+    }
 
     &__content {
         display: flex;
@@ -43,12 +43,16 @@
                 color: $brand-red;
                 font-size: 2em;
             }
+
+            @media (max-width: $desktop_sm) {
+                font-size: 18px;
+            }
         }
 
         &__title {
-            font-size: 32px;
+            font-size: 28px;
             font-family: brother-1816, sans-serif;
-            line-height: 35px;
+            line-height: 30px;
             color: $text-dark;
             margin-bottom: .5em;
 
@@ -77,11 +81,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+        }
     }
 }
 
 .buttonIcon {
     margin-left: .3rem;
     width: 2em;
-    height: 2em; 
+    height: 2em;
 }

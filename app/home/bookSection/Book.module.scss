@@ -15,14 +15,14 @@
     padding: 0 8em;
 
     @media (max-width: $desktop_sm) {
-            padding: 2em 1em;
-            height: auto;
-            flex-wrap: wrap;
-            justify-content: start;
-        }
+        padding: 4em 1em;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
 
-    background: 
-    linear-gradient(rgba(245, 245, 250, 0.6), rgba(230, 230, 235, 1)), // overlay escuro
+    background: linear-gradient(rgba(245, 245, 250, 0.6), rgba(230, 230, 235, 1)),
+    // overlay escuro
     url('/assets/mrSimbol.svg') center/85% no-repeat;
 
     &__content {
@@ -35,6 +35,7 @@
 
         @media (max-width: $desktop_sm) {
             width: 100%;
+            margin-bottom: 4em;
         }
 
         h2 {
@@ -79,6 +80,7 @@
         @media (max-width: $desktop_sm) {
             width: 100%;
             flex-direction: column;
+            gap: 2em;
         }
 
         img {
@@ -86,6 +88,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.4s ease;
             cursor: pointer;
+
+            @media (max-width: $desktop_sm) {
+                width: 100%;
+            }
 
             &:hover {
                 transform: scale(1.05);
@@ -99,5 +105,5 @@
 
 .buttonIcon {
     width: 2em;
-    height: 2em; 
+    height: 2em;
 }

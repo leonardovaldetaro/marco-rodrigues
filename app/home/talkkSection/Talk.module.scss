@@ -9,7 +9,15 @@
 
     background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), // overlay escuro
-    url('/assets/background-talkSection.webp') center/cover no-repeat;
+    url('/assets/background-talkSection.webp') 50%/cover no-repeat;
+
+    @media (max-width: $desktop_sm) {
+            padding: 4em 1em;
+
+            background: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), // overlay escuro
+            url('/assets/background-talkSection.webp') 20%/cover no-repeat;
+        }
 
     &__content {
         display: flex;
