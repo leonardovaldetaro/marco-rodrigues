@@ -91,7 +91,11 @@ export default function Nav() {
                 <ul className={Styles.mobileNavMenu__list}>
                     {menuItems.map((rota, index) => (
                     <li className={Styles.mobileNavMenu__list__item} key={index}>
-                        <Link href={rota.to} className={Styles.link}>
+                        <Link 
+                            href={rota.to} 
+                            className={Styles.link}
+                            onClick={closeMenu}
+                        >
                             {rota.label}
                         </Link>
                     </li>
