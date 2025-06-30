@@ -34,7 +34,7 @@ export default function AboutSection() {
                     href="/sobre"
                     variant='primary'
                 >
-                    Conheça a minha história
+                    Minha jornada pessoal
                     <FiChevronsRight className={Styles.buttonIcon}/>
                 </Button>
 

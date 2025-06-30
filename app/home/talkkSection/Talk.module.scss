@@ -3,6 +3,7 @@
 
 .talkSection {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
     padding: 4em 8em;
@@ -29,7 +30,7 @@
 
         &__title {
             color: $brand-golden;
-            font-size: 1.3em;
+            font-size: 24px;
             font-weight: 700;
             margin-bottom: 0.5em;
             text-align: center;

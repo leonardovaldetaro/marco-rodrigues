@@ -1,0 +1,94 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.testemunhosSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: $desktop_sm) {
+        flex-direction: column;
+        padding: 4em 1em 0;
+    }
+
+    &__container {
+        align-items: center;
+        border-top: 1px solid rgba(24, 24, 24, 0.4);
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        max-width: 1440px;
+        padding: 2em 0;
+
+        @media (max-width: $desktop_sm) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        hr {
+            width: 25%; // altura desejada
+            border-top: 1px solid rgba(24, 24, 24, 0.4);
+            transform: rotate(90deg);
+
+            @media (max-width: $desktop_sm) {
+                display: none;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+
+            @media (max-width: $desktop_sm) {
+                flex-direction: column;
+                margin-bottom: 4em;
+            }
+
+            &__text {
+                font-size: 1.2em;
+                font-weight: 500;
+                font-family: "Spectral", serif;
+                line-height: 1.5em;
+                color: $text-dark;
+                margin-right: 2em;
+
+                @media (max-width: $desktop_sm) {
+                    text-align: center;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__imageContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: start;
+            margin-right: 1em;
+
+            @media (max-width: $desktop_sm) {
+                width: 35%;
+                margin-bottom: 2em;
+                margin-right: 0;
+                align-items: center;
+            }
+
+            img {
+                width: 85%;
+                height: auto;
+                border-radius: 50%;
+
+                @media (max-width: $desktop_sm) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

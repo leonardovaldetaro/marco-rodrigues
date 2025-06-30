@@ -7,7 +7,7 @@ import { FaSquareInstagram, FaLinkedin, FaSquareYoutube, FaSquareFacebook } from
 export default function HeroSection() {
     return (
         <section className={Styles.heroSection}>
-            <h1 className={Styles.heroSection__title}>Liderança com própósito.</h1>
+            <h1 className={Styles.heroSection__title}>Liderança com propósito.</h1>
             <h1 className={Styles.heroSection__title}>Inclusão com coragem.</h1>
             <p className={Styles.heroSection__text}>Desafiar limites é mais do que coragem, é um compromisso com a verdade que vive em cada um de nós.</p>
             <h2>A mudança começa em ti.</h2>

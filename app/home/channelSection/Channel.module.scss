@@ -29,7 +29,7 @@
 
         &__tag {
             font-size: 24px;
-            font-family: brother-1816, sans-serif;
+            font-family: $font-primary;
             line-height: 25px;
             color: $text-dark;
             margin-bottom: 0.5em;
@@ -44,7 +44,7 @@
 
         h2 {
             font-size: 32px;
-            font-family: brother-1816, sans-serif;
+            font-family: $font-primary;
             line-height: 35px;
             color: $text-dark;
             margin-bottom: .5em;
@@ -61,7 +61,7 @@
         P {
             font-size: 18px;
             font-weight: 500;
-            font-family: "Spectral", serif;
+            font-family: $font-secondary;
             line-height: 25px;
             color: $text-dark;
             margin-bottom: 1.5em;
@@ -82,7 +82,7 @@
             font-size: 20px;
             letter-spacing: -1px;
             font-weight: 300;
-            font-family: brother-1816, sans-serif;
+            font-family: $font-primary;
             color: $text-dark;
         }
     }

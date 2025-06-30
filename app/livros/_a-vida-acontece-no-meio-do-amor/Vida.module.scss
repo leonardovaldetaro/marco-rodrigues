@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.vidaPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $brand-golden-50;
+    width: 100%;
+
+    @media (max-width: $desktop_sm) {
+        padding: 6em 1em 4em;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    &__imageContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+
+        &__image {
+            max-width: 85%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: $text-dark;
+        }
+
+        &__text {
+            font-size: 1.2em;
+            font-weight: 500;
+            font-family: "Spectral", serif;
+            line-height: 1.5em;
+            color: $text-dark;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.buttonIcon {
+    width: 2em;
+    height: 2em;
+}
+
+.container {
+    display: flex;
+    column-gap: 2em;
+    align-items: center;
+    max-width: 1440px;
+    padding: 4em 8em;
+    margin: 0 auto;
+
+    @media (max-width: $desktop_sm) {
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+}

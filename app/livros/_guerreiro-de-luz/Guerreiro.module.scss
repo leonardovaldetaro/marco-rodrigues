@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.guerreiroPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2em;
+    align-items: center;
+    padding: 6em 8em 4em;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: $desktop_sm) {
+        padding: 6em 1em 4em;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__imageContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+
+        &__image {
+            max-width: 85%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: $text-dark;
+
+            span {
+                background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        &__text {
+            font-size: 1.2em;
+            font-weight: 500;
+            font-family: "Spectral", serif;
+            line-height: 1.5em;
+            color: $text-dark;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.buttonIcon {
+    width: 2em;
+    height: 2em;
+}
