@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Styles from "./nav.module.scss";
 import Link from "next/link";
+import LogoHeader from "next/image";
 import classNames from "classnames";
 import { MdKeyboardArrowDown, MdClose } from "react-icons/md";
 
@@ -88,17 +89,31 @@ export default function Nav() {
                         <MdClose className={Styles.mobileNavMenu__close__icon} />
                     </button>
                 </div>
+                <Link 
+                    href="/" 
+                    aria-label="Logotipo do header Marco Rodrigues com um símbolo abstrato das letras MR. Este é o link para a página inicial."
+                    className={Styles.logoLink}
+                    onClick={closeMenu}
+                >
+                    <LogoHeader
+                        src="/assets/mrLogo.svg"
+                        alt=""
+                        width={250}
+                        height={54}
+                        className={Styles.navLogoImage}
+                    />
+                </Link>
                 <ul className={Styles.mobileNavMenu__list}>
                     {menuItems.map((rota, index) => (
-                    <li className={Styles.mobileNavMenu__list__item} key={index}>
-                        <Link 
-                            href={rota.to} 
-                            className={Styles.link}
-                            onClick={closeMenu}
-                        >
-                            {rota.label}
-                        </Link>
-                    </li>
+                        <li className={Styles.mobileNavMenu__list__item} key={index}>
+                            <Link
+                                href={rota.to}
+                                className={Styles.link}
+                                onClick={closeMenu}
+                            >
+                                {rota.label}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </nav>

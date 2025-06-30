@@ -29,9 +29,6 @@
     align-items: center;
     justify-content: center;
 
-    @media (min-width: $desktop_sm) {
-    }
-
 
     &__link {
         transition: transform 0.4s ease;

@@ -156,9 +156,9 @@
     }
 
     &__icon {
-        color: $text-light;
-        font-size: 1.5em;
-      }
+      color: $text-light;
+      font-size: 1.5em;
+    }
   }
 
   &__list {
@@ -176,4 +176,28 @@
 .visible {
   visibility: visible; // Visível quando ativo
   opacity: 1; // Opaco quando ativo
+}
+
+.logoLink {
+  width: 250px;
+  height: 55px;
+
+  &__img {
+    width: 250px;
+
+    @media (max-width: $desktop_sm) {
+      width: 160px;
+      
+    }
+  }
+}
+
+.navLogoImage {
+  width: 250px;
+  height: 55px;
+
+  @media (max-width: $desktop_sm) {
+    width: 160px;
+    margin-bottom: 2em;
+  }
 }
