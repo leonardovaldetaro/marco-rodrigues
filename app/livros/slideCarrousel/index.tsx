@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from "react"
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react' // import from 'keen-slider/react.es' for to get an ES module
 import CardsInfo from './data/cardsInfo.json';
@@ -8,7 +8,16 @@ import Card from './card';
 import Styles from './Slide.module.scss';
 
 export default function SlideCarrousel() {
-    const [sliderRef] = useKeenSlider({
+    const [currentSlide, setCurrentSlide] = useState(0)
+    const [loaded, setLoaded] = useState(false)
+    const [sliderRef, instanceRef] = useKeenSlider({
+        initial: 0,
+        slideChanged(slider) {
+            setCurrentSlide(slider.track.details.rel)
+        },
+        created() {
+            setLoaded(true)
+        },
         slides: { perView: 3, spacing: 40 },
         loop: true,
 
@@ -38,6 +47,23 @@ export default function SlideCarrousel() {
                     </div>
                 ))}
             </section>
+            {loaded && instanceRef.current && (
+                <div className={Styles.dots}>
+                    {[
+                        ...Array(instanceRef.current.track.details.slides.length).keys(),
+                    ].map((idx) => {
+                        return (
+                            <button
+                                key={idx}
+                                onClick={() => {
+                                    instanceRef.current?.moveToIdx(idx)
+                                }}
+                                className={`${Styles.dot} ${currentSlide === idx ? Styles.active : ""}`}
+                            ></button>
+                        )
+                    })}
+                </div>
+            )}
         </div>
     )
 }

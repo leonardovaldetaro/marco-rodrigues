@@ -8,7 +8,7 @@
     align-items: center;
     align-items: flex-start;
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 4em 0 2em;
 
     @media (max-width: $desktop_sm) {
         width: 100%;
@@ -50,4 +50,33 @@
             width: 100%;
         }
     }
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 2em 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: $brand-dark-blue;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: $brand-golden;
 }
