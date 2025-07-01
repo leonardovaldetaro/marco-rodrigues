@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.testemunhosSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: $desktop_sm) {
+        flex-direction: column;
+        padding: 4em 1em 0;
+    }
+
+    &__container {
+        align-items: center;
+        border-top: 1px solid rgba(24, 24, 24, 0.4);
+        display: flex;
+        width: 85%;
+        max-width: 1440px;
+        padding: 2em 0;
+
+        @media (max-width: $desktop_sm) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

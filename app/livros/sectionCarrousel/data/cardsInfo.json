@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Bhagavad Gītā",
+    "amazonLink": "https://www.amazon.com.br/Rafael-Porto-Fotografia-que-Valoriza/dp/B0C5Z3K6XG/ref=sr_1_1?crid=2Q8V4W7F9YH8&keywords=rafael+porto+fotografia+que+valoriza&qid=1719826260&sprefix=rafael+porto+fotografia+que+valoriza%2Caps%2C150&sr=8-1",
+    "description": "Ilustrado con obras clásicas de la pintura india.",
+    "capa": "/assets/bhagavad-gita-ilustrado.jpg",
+    "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+    "id": "1"
+  },
+  {
+    "title": "Muchas vidas, muchos maestros",
+    "amazonLink": "https://www.amazon.es/dp/8490707189/ref=zg_bs_g_902702031_d_sccl_4/262-2364520-7435606?psc=1",
+    "description": "La historia real de un psiquiatra, su joven paciente y la terapia de regresión que cambió sus vidas para siempre.",
+    "capa": "/assets/muchas-vidas-muchos-maestros.jpg",
+    "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+    "id": "2"
+  },
+  {
+    "title": "Conversaciones con Dios 1",
+    "amazonLink": "https://www.amazon.es/-/pt/dp/8499897800/ref=zg_bs_g_902702031_d_sccl_7/262-2364520-7435606?psc=1",
+    "description": "Conversaciones con Dios I es una experiencia extraordinaria.",
+    "capa": "/assets/conversaciones-con-dios-1.jpg",
+    "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+    "id": "3"
+  } 
+]

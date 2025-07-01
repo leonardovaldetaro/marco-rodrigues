@@ -1,9 +1,20 @@
 import VidaPage from './_a-vida-acontece-no-meio-do-amor';
 import GuerreiroPage from './_guerreiro-de-luz';
-import TestemunhosPage from './_testemunhos';
 import Styles from './Livros.module.scss';
+import TestemunhosSection from './testemunhoSection';
+import Testemunho from './testemunhoSection/testemunho';
+
+// Importando imagens e ícones
 import Image from 'next/image';
 import Sol from '../../public/assets/sol.svg';
+import TestemunhoLeo from '../../public/assets/leonardoValdetaroB.webp';
+import TestemunhoFlavia from '../../public/assets/flavia.webp';
+
+//importação do carrossel de livros
+import 'keen-slider/keen-slider.min.css'
+import KeenSlider from 'keen-slider'
+import SlideCarrousel from './slideCarrousel';
+
 
 
 export default function LivrosPage() {
@@ -24,8 +35,17 @@ export default function LivrosPage() {
         </p>
       </div>
       <GuerreiroPage />
-      <TestemunhosPage />
+      <TestemunhosSection>
+        <Testemunho image={TestemunhoLeo} alt={"Leonardo Valdetaro"}>
+          "A vida acontece no meio do amor" é um livro que nos ensina a viver com amor e resiliência, mesmo diante dos desafios mais difíceis."
+        </Testemunho>
+        <hr />
+        <Testemunho image={TestemunhoFlavia} alt={"Flavia Pinheiro"}>
+          "Marco Rodrigues, com a sua escrita sensível e profunda, convida-nos a refletir sobre a vida e o amor de uma forma única e inspiradora."
+        </Testemunho>
+      </TestemunhosSection>
       <VidaPage />
+      <SlideCarrousel />
     </main>
   );
 }

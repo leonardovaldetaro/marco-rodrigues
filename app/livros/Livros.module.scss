@@ -54,4 +54,14 @@
 
         }
     }
+
+    hr {
+        width: 10%; // altura desejada
+        border-top: 1px solid rgba(24, 24, 24, 0.4);
+        transform: rotate(90deg);
+
+        @media (max-width: $desktop_sm) {
+            display: none;
+        }
+    }
 }
