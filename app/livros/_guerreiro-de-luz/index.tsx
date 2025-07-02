@@ -26,7 +26,7 @@ export default function GuerreiroPage() {
                     Permite-te embarcar; Chorar, rir, mergulhar profundamente em cada página… E, no decorrer desta experiência, partilha a luz que tens com este Mundo, ele merece. Sê bem-vindo, Guerreiro de Luz.
                 </p>
                 <Button
-                    href="/livros"
+                    href="https://www.atlanticbookshop.pt/bios/um-guerreiro-de-luz-os-unicos-limites-estao-na-tua-mente"
                     variant='primary'
                 >
                     Compre o livro

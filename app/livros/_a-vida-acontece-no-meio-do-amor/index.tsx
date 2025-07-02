@@ -27,7 +27,7 @@ export default function VidaPage() {
                         Acima de tudo, desfruta, confia e atreve-te a descobrir que tu és o milagre. A onda, um dia, descobriu que era oceano. Depois de se relembrar, decidiu trazer a boa notícia a todas as outras ondas. Com amor. A Vida acontece no meio do Amor.
                     </p>
                     <Button
-                        href="/livros"
+                        href="https://www.atlanticbookshop.pt/nao-ficcao/a-vida-acontece-no-meio-do-amor"
                         variant='primary'
                     >
                         Compre o livro

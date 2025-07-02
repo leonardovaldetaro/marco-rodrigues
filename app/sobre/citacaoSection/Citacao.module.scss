@@ -11,6 +11,10 @@
     height: 50vh;
     width: 100%;
 
+    @media (max-width: $desktop_sm) {
+        padding: 4rem 1em;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -24,6 +28,10 @@
             color: $text-midle;
             text-align: center;
             position: relative;
+
+            @media (max-width: $desktop_sm) {
+                font-size: 2rem;
+            }
 
             span {
                 background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%);
@@ -45,6 +53,11 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
+
+                @media (max-width: $desktop_sm) {
+                    top: -70px;
+                    left: -25px;
+                }
             }
 
             &::after {
@@ -59,6 +72,10 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
+
+                @media (max-width: $desktop_sm) {
+                    bottom: -55px;
+                }
             }
         }
     }

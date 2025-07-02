@@ -25,5 +25,14 @@
     "capa": "/assets/conversaciones-con-dios-1.webp",
     "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
     "id": "3"
-  } 
+  },
+  {
+    "title": "El enigma de Dios",
+    "amazonLink": "https://www.amazon.es/-/pt/dp/846668171X/ref=zg_bs_g_902702031_d_sccl_1/262-2364520-7435606?psc=1",
+    "description": "Existe un ser supremo creador del universo o somos simplemente producto del azar?",
+    "autor": "Pedro García Cuartango",
+    "capa": "/assets/el-enigma-de-dios.webp",
+    "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+    "id": "4"
+  }
 ]

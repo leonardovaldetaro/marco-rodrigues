@@ -54,6 +54,7 @@ export default function SlideCarrousel() {
                     ].map((idx) => {
                         return (
                             <button
+                                aria-label="Ir para slide"
                                 key={idx}
                                 onClick={() => {
                                     instanceRef.current?.moveToIdx(idx)
