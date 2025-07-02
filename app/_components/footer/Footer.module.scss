@@ -15,11 +15,20 @@
         justify-content: space-around;
         width: 100%;
 
+
+        @media (max-width: $desktop_sm) {
+            flex-direction: column;
+        }
+
         &__lvtext {
             display: flex;
             flex-direction: row;
             align-items: center;
-            column-gap: .5em;
+            gap: .5em;
+
+            @media (max-width: $desktop_sm) {
+                margin-top: 1em;
+            }
         }
 
         p {

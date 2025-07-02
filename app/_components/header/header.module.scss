@@ -6,7 +6,7 @@
     top: 0;
     z-index: 1000;
     transition: transform 0.3s ease-in-out; // Animação suave para aparecer/desaparecer
-    background-color:  rgba(0, 14, 15, .4);
+    background-color: rgba(0, 14, 15, .4);
 
     padding: 1em 0;
     display: flex;
@@ -14,6 +14,10 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
+
+    @media (max-width: $desktop_sm) {
+        flex-direction: column;
+    }
 }
 
 .headerVisible {
@@ -37,7 +41,7 @@
 
         &:hover {
             transform: scale(1.1);
-        } 
+        }
     }
 
     &__img {
@@ -48,4 +52,3 @@
         }
     }
 }
-
