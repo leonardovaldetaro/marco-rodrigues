@@ -16,7 +16,7 @@
     width: 100%;
 
     @media (max-width: $desktop_sm) {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
