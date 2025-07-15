@@ -4,20 +4,22 @@ import { notFound } from "next/navigation";
 import Link from 'next/link';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+type BlogPageParams = { params: { slug: string } };
+
+export async function generateMetadata({ params }: BlogPageParams): Promise<Metadata> {
     const post = await getPostBySlug(params.slug)
     if (!post) return {};
 
-    return{
+    return {
         title: post.title,
         description: post.excerpt,
     };
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: BlogPageParams) {
     const post = await getPostBySlug(params.slug);
 
-    if(!post) return notFound();
+    if (!post) return notFound();
 
     return (
         <section className={Styles.blogPostPage}>
