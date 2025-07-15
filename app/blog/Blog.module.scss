@@ -2,9 +2,32 @@
 @import '../styles/breakpoints';
 
 .blogPage {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    padding: 8em 0;
+    width: 100%;
+    max-width: 1440px;
+
+    &__title {
+        font-size: 2.5em;
+        color: $text-dark;
+        margin-bottom: 1em;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        gap: 2em;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 8em;
+        
+        &__item {
+            padding: 1em;
+            box-shadow: 0 1px 5px rgba(0,0,0,.6);
+            width: 33.333333%;
+        }
+    }
 }

@@ -42,7 +42,7 @@ export default function ValoresSection() {
                         height={500}
                     />
                     <figcaption className={Styles.valoresSection__container__image__caption}>
-                        Marco Rodrigues Coach
+                        Marco Rodrigues Coach em momento de descontração.
                     </figcaption>
                 </figure>
             </div>

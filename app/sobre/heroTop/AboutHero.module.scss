@@ -62,18 +62,18 @@
             }
 
             &__subtitle {
-                font-size: 16px;
+                font-size: $text-size;
                 font-weight: 300;
-                font-family: "Spectral", serif;
+                font-family: $font-secondary;
                 color: $text-light;
                 margin-bottom: 1.5em;
             }
 
             &__text {
-                font-size: 18px;
+                font-size: $text-size;
                 font-weight: 300;
-                font-family: "Spectral", serif;
-                line-height: 25px;
+                font-family: $font-secondary;
+                line-height: 28px;
                 color: $text-light;
             }
         }

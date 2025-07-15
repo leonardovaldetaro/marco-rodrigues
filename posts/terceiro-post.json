@@ -1,0 +1,8 @@
+{
+  "title": "Meu Terceiro Post",
+  "slug": "meu-terceiro-post",
+  "date": "2025-07-04",
+  "author": "Leonardo Valdetaro",
+  "excerpt": "Este é o meu terceiro post no blog.",
+  "content": "Este é o conteúdo completo do post. Você pode usar HTML ou converter de markdown para renderizar com segurança."
+}

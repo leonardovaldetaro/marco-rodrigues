@@ -37,7 +37,7 @@
         }
 
         h2 {
-            font-size: 2em;
+            font-size: $title-size;
             margin-bottom: 0.5em;
             color: $text-dark;
 
@@ -51,14 +51,14 @@
         }
 
         h3 {
-            font-size: 1.3em;
+            font-size: $subtitle-size;
             margin-bottom: 0.5em;
             color: $text-dark;
             font-weight: 500;
         }
 
         p {
-            font-size: 18px;
+            font-size: $text-size;
             font-weight: 500;
             font-family: "Spectral", serif;
             line-height: 25px;
@@ -104,4 +104,20 @@
 .buttonIcon {
     width: 2em;
     height: 2em;
+}
+
+.containerBook {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 3em;
+    padding: 0 8em;
+
+    @media (max-width: $desktop_sm) {
+        padding: 0;
+        flex-direction: column;
+    }
 }

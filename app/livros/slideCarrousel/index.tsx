@@ -30,8 +30,10 @@ export default function SlideCarrousel() {
 
     return (
         <div className={Styles.slideContainer}>
+            
             <h2 className={Styles.slideContainer__title}>Livros que Recomendo</h2>
             <p className={Styles.slideContainer__text}>Cada livro nesta seleção marcou momentos importantes da minha jornada. São obras que despertam reflexões, desafiam certezas e ajudam a construir pontes entre o que somos e o que podemos ser. Que estas leituras também iluminem o teu caminho.</p>
+            
             <section ref={sliderRef} className={Styles.keenSlider}>
                 {CardsInfo.map(card => (
                     <div className='keen-slider__slide' key={card.id}>
@@ -47,6 +49,7 @@ export default function SlideCarrousel() {
                     </div>
                 ))}
             </section>
+
             {loaded && instanceRef.current && (
                 <div className={Styles.dots}>
                     {[
@@ -65,6 +68,7 @@ export default function SlideCarrousel() {
                     })}
                 </div>
             )}
+            
         </div>
     )
 }

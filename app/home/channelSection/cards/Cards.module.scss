@@ -9,7 +9,7 @@
         }
 
     &__title {
-        font-size: 24px;
+        font-size: $subtitle-size;
         font-family: $font-primary;
         color: $text-dark;
         margin-bottom: 0.5em;
@@ -24,10 +24,10 @@
     }
 
     &__description {
-        font-size: 18px;
+        font-size: $text-size;
         font-weight: 500;
         font-family: $font-secondary;
-        line-height: 25px;
+        line-height: 28px;
         color: $text-dark;
         margin-bottom: 1.5em;
     }

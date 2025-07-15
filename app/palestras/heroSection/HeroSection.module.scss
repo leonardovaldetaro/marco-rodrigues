@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.heroSectionTop {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+    &__containerTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8em 8em 4em 8em;
+        background: linear-gradient(90deg, rgba(0, 43, 115, 1) 0%, rgba(127, 5, 37, 1) 100%);
+
+        &__title {
+            font-size: $title-size;
+            font-weight: 900;
+            color: $text-light;
+            text-align: center;
+        }
+    }
+}

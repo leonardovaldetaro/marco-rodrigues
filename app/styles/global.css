@@ -8,6 +8,10 @@
 	box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 div,
@@ -113,11 +117,7 @@ section {
 
 body {
 	background-color: rgba(244, 244, 245, 1);
-	font-family: "Afacad", sans-serif !important;
-	line-height: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	font-family: "Afacad", sans-serif;
 }
 
 ol,
@@ -146,10 +146,9 @@ table {
 .mainContainer {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	width: 100%;
 }
 
 .no-scroll {
 	overflow: hidden; /* Prevent scrolling */
-  }
+}

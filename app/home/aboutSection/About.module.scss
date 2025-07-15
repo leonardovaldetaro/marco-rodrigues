@@ -3,15 +3,16 @@
 
 .aboutSection {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-color: $brand-golden;
     width: 100%;
-    padding: 4em 8em;
+    padding: 4em 0;
     gap: 3em;
 
     @media (max-width: $desktop_sm) {
-        padding: 4em 1em;
+        padding: 4em 0;
         flex-direction: column;
     }
 
@@ -30,7 +31,7 @@
         }
 
         &__tag {
-            font-size: 24px;
+            font-size: $subtitle-size;
             font-family: $font-primary;
             line-height: 25px;
             color: $text-dark;
@@ -49,9 +50,9 @@
         }
 
         &__title {
-            font-size: 28px;
+            font-size: $title-size;
             font-family: $font-primary;
-            line-height: 30px;
+            line-height: 35px;
             color: $text-dark;
             margin-bottom: .5em;
 
@@ -65,10 +66,10 @@
         }
 
         &__text {
-            font-size: 18px;
+            font-size: $text-size;
             font-weight: 500;
             font-family: $font-secondary;
-            line-height: 25px;
+            line-height: 28px;
             color: $text-dark;
             margin-bottom: 1em;
         }
@@ -76,8 +77,8 @@
 
     &__image {
         width: 50%;
-        height: auto;
         display: flex;
+        height: auto;
         justify-content: center;
         align-items: center;
 
@@ -91,4 +92,20 @@
     margin-left: .3rem;
     width: 2em;
     height: 2em;
+}
+
+.containerAbout {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 3em;
+    padding: 0 8em;
+
+    @media (max-width: $desktop_sm) {
+        padding: 0 1em;
+        flex-direction: column;
+    }
 }

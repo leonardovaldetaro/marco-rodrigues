@@ -7,13 +7,18 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 3em;
+        gap: 3em;
         width: 100%;
         max-width: 1440px;
+        margin: 0 auto;
+
+        @media (max-width: $desktop_sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         &__content {
             display: flex;
@@ -22,17 +27,22 @@
             padding-left: 8em;
             justify-content: center;
 
+            @media (max-width: $desktop_sm) {
+                padding: 8em 1em 4em;
+            }
+
             &__title {
-                font-size: 2.5em;
+                font-size: $title-size;
                 font-weight: 700;
                 color: $text-light;
                 margin-bottom: 1em;
+                
             }
 
             &__text {
-                font-size: 18px;
+                font-size: $text-size;
                 font-weight: 500;
-                font-family: "Spectral", serif;
+                font-family: $font-secondary;
                 line-height: 25px;
                 color: $text-light;
                 margin-bottom: 1em;
@@ -46,6 +56,10 @@
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            @media (max-width: $desktop_sm) {
+                grid-column: 1;
             }
         }
     }

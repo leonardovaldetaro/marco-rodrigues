@@ -6,19 +6,19 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 4em 8em;
+    padding: 4em 0;
 
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), // overlay escuro
-    url('/assets/background-talkSection.webp') 50%/cover no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), // overlay escuro
+        url('/assets/background-talkSection.webp') 50%/cover no-repeat;
 
     @media (max-width: $desktop_sm) {
-            padding: 4em 1em;
+        padding: 4em 1em;
 
-            background: 
+        background:
             linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), // overlay escuro
             url('/assets/background-talkSection.webp') 20%/cover no-repeat;
-        }
+    }
 
     &__content {
         display: flex;
@@ -51,5 +51,20 @@
 .buttonIcon {
     margin-left: .3rem;
     width: 2em;
-    height: 2em; 
+    height: 2em;
+}
+
+.containerTalk {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 3em;
+    padding: 0 8em;
+
+    @media (max-width: $desktop_sm) {
+        padding: 0;
+    }
 }

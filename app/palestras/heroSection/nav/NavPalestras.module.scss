@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+@import '../../../styles/breakpoints';
+
+.navPalestras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 4em 0;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2em;
+    }
+
+    &__item {
+        font-size: $text-size;
+        font-family: $font-primary;
+        font-weight: 700;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $brand-dark-blue;
+
+        &:hover {
+            color: $brand-light-blue;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Meu Segundo Post",
+  "slug": "meu-segundo-post",
+  "date": "2025-07-04",
+  "author": "Leonardo Valdetaro",
+  "excerpt": "Este é o meu segundo post no blog.",
+  "content": "Este é o conteúdo completo do post. Você pode usar HTML ou converter de markdown para renderizar com segurança."
+}
