@@ -10,8 +10,10 @@ export function getAllPosts() {
         const filePath = path.join(postsDirectory, filename);
         const fileContents = fs.readFileSync(filePath, 'utf8');
         const postData = JSON.parse(fileContents);
+        const slug = filename.replace(/\.json$/, '');
 
         return {
+            slug,
             ...postData
         };
     });
