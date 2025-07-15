@@ -2,11 +2,8 @@ import Styles from './Slug.module.scss';
 import { getPostBySlug } from "../../lib/posts";
 import { notFound } from "next/navigation";
 import Link from 'next/link';
-import { Metadata } from 'next';
 
-type BlogPageParams = { params: { slug: string } };
-
-export async function generateMetadata({ params }: BlogPageParams): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }) {
     const post = await getPostBySlug(params.slug)
     if (!post) return {};
 
@@ -16,7 +13,7 @@ export async function generateMetadata({ params }: BlogPageParams): Promise<Meta
     };
 }
 
-export default async function BlogPostPage({ params }: BlogPageParams) {
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
     const post = await getPostBySlug(params.slug);
 
     if (!post) return notFound();
