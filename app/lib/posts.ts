@@ -19,7 +19,7 @@ export function getAllPosts() {
     return posts.sort((a, b) => (a.date > b.date ? -1 : 1));
 }
 
-export async function getPostBySlug(slug: string) {
+export async function getPostBySlug(slug: string): Promise<any | null> {
     const filepath = path.join(postsDirectory, `${slug}.json`);
     if(!fs.existsSync(filepath)) return null;
     const fileContent = await fs.promises.readFile(filepath, 'utf-8');
