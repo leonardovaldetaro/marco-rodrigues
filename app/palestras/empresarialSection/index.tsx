@@ -1,4 +1,3 @@
-import { title } from 'process';
 import Styles from './Empresarial.module.scss';
 import Image from 'next/image';
 
@@ -36,7 +35,7 @@ const empresarialContent = [
 export default function EmpresarialSection() {
     return (
         <section className={Styles.empresarialSection} id='empresarial'>
-            <h2 className={Styles.empresarialSection__heading}>Empresarial</h2>
+            <h2 className={Styles.empresarialSection__heading}>Palestras para empresas que querem mais do que resultados.</h2>
             <article className={Styles.empresarialSection__container}>
                 <div className={Styles.empresarialSection__container__contentWrapper}>
                     {empresarialContent.map((item, index) => (
