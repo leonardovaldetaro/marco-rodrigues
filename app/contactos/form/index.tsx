@@ -6,6 +6,7 @@ export default function Contato() {
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
+        telefone: '', // campo invisível
         mensagem: ''
     });
 
@@ -33,6 +34,12 @@ export default function Contato() {
 
         // Limpa os erros antes de validar
         const newErrors: { [key: string]: string } = {};
+        
+        // Verifica se o campo invisível (honeypot) foi preenchido
+        if (formData.telefone.trim() !== '') {
+            console.warn('Tentativa de spam bloqueada pelo honeypot');
+            return;
+        }
 
         // Validação do nome
         if (!formData.nome.trim()) {
@@ -74,14 +81,14 @@ export default function Contato() {
 
             // Verifica se a resposta foi bem-sucedida
             const result = await response.json();
-        
+
             // Exibe o modal de sucesso Popup
             setShowModal(true);
 
             if (result.status === 'sucesso') {
                 //REMOVER ESSE BLOCO APOS O TESTE
                 // alert('Mensagem enviada com sucesso!');
-                setFormData({ nome: '', email: '', mensagem: '' });
+                setFormData({ nome: '', email: '', telefone: '', mensagem: '' });
                 // aqui vamos disparar o popup na próxima etapa
 
             } else {
@@ -95,7 +102,7 @@ export default function Contato() {
         setIsSubmitting(false); // encerra o loading ao final
     };
 
-    const requiredStyle = '#ff0000';
+    const requiredStyle = '#ffc4c4';
 
     return (
         <>
@@ -127,6 +134,19 @@ export default function Contato() {
                             placeholder='Escreva o seu melhor email aqui...'
                         />
                         {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+                    </div>
+
+                    {/* Campo escondido (honeypot) para detectar bots */}
+                    <div style={{ display: 'none' }}>
+                        <label htmlFor="telefone">Telefone:</label>
+                        <input
+                            type="text"
+                            id="telefone"
+                            name="telefone"
+                            autoComplete="off"
+                            value={(formData as any).telefone || ''}
+                            onChange={handleChange}
+                        />
                     </div>
 
                     <div className={Styles.form__group}>
@@ -176,12 +196,27 @@ export default function Contato() {
                         textAlign: 'center',
                         boxShadow: '0 0 20px rgba(0,0,0,0.3)'
                     }}>
-                        <h2>Mensagem enviada com sucesso!</h2>
-                        <p>Obrigado por entrar em contato. Em breve retornaremos.</p>
+                        <h2 style={{
+                            marginBottom: '1rem',
+                            fontSize: '1.6rem',
+                            fontWeight: 'bold'
+                        }}>
+                            Mensagem enviada com sucesso!
+                        </h2>
+                        <p style={{
+                            marginBottom: '1rem',
+                            fontSize: '1.2rem',
+                            color: '#1f1f1f',
+                            textAlign: 'center'
+                        }}>
+                            Obrigado por sua mensagem.<br />Em breve retornarei o seu contacto.
+                        </p>
                         <button onClick={() => setShowModal(false)} style={{
                             marginTop: '1rem',
-                            padding: '0.5rem 1rem',
-                            backgroundColor: '#0070f3',
+                            padding: '1rem 1.5rem',
+                            fontSize: '1.2rem',
+                            fontWeight: '700',
+                            background: 'linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%)',
                             color: 'white',
                             border: 'none',
                             borderRadius: '4px',

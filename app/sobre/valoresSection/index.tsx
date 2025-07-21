@@ -1,6 +1,7 @@
 import Styles from './Valores.module.scss';
 import Image from 'next/image';
 import valoresImage from '../../../public/assets/valores-marco-rodrigues2.webp';
+import Estrela from '../../../public/assets/estrelaAzul.svg';
 
 export default function ValoresSection() {
     return (
@@ -13,6 +14,13 @@ export default function ValoresSection() {
                     <p className={Styles.valoresSection__container__content__text}>
                         Marco Rodrigues acredita que todo ser humano carrega dentro de si um potencial inato de luz, verdade e coragem — muitas vezes obscurecido pelas estruturas externas que nos condicionam. Ao longo da sua caminhada como coach e facilitador de desenvolvimento humano, Marco construiu um caminho baseado em quatro pilares que sustentam sua abordagem:
                     </p>
+                    <Image
+                        src={Estrela}
+                        alt="Estrela azul simbolizando os valores de Marco Rodrigues"
+                        className={Styles.valoresSection__container__content__image}
+                        width={70}
+                        height={70}
+                    />
                     <h3 className={Styles.valoresSection__container__content__subtitle}>Valores que o guia</h3>
                     <ol className={Styles.valoresSection__container__content__list}>
                         <li className={Styles.valoresSection__container__content__list__item}>
