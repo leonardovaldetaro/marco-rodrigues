@@ -23,10 +23,10 @@ export default function Nav() {
     };
 
     const menuItems = [
+        { label: "Inicio", to: "/" },
         { label: "Sobre", to: "/sobre" },
         { label: "Palestras", to: "/palestras" },
         { label: "Livros", to: "/livros" },
-        { label: "Blog", to: "/blog" },
         { label: "Contactos", to: "/contactos" },
     ];
     return (

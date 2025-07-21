@@ -34,7 +34,7 @@ const empresarialContent = [
 
 export default function EmpresarialSection() {
     return (
-        <section className={Styles.empresarialSection} id='empresarial'>
+        <section className={Styles.empresarialSection} id='empresarial'>    
             <h2 className={Styles.empresarialSection__heading}>Palestras para empresas que querem mais do que resultados.</h2>
             <article className={Styles.empresarialSection__container}>
                 <div className={Styles.empresarialSection__container__contentWrapper}>

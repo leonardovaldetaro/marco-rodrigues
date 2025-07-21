@@ -9,11 +9,13 @@
     padding: 8em 0;
     width: 100%;
     max-width: 1440px;
+    background-color: $brand-dark-blue;
 
     &__title {
         font-size: 2.5em;
         color: $text-dark;
         margin-bottom: 1em;
+        color: $text-light;
     }
 
     &__list {
@@ -23,11 +25,40 @@
         width: 100%;
         max-width: 1440px;
         padding: 0 8em;
-        
+
+        @media (max-width: $desktop_sm) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $desktop_sm) {
+            padding: 2em 1em;
+        }
+
         &__item {
             padding: 1em;
-            box-shadow: 0 1px 5px rgba(0,0,0,.6);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
             width: 33.333333%;
+
+            @media (max-width: $desktop_sm) {
+                width: 100%;
+            }
+
+            &__title {
+                font-size: 1.5em;
+                color: $text-light;
+                margin-bottom: 0.5em;
+            }
+
+            &__excerpt {
+                font-size: 1em;
+                color: $text-light;
+                margin-bottom: 1em;
+            }
+
+            &__date {
+                font-size: 0.875em;
+                color: $text-light;
+            }
         }
     }
 }
