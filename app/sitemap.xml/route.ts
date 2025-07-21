@@ -3,6 +3,7 @@ export async function GET() {
     '',
     'sobre',
     'contato',
+    'livros',
     'palestras'
   ];
 
