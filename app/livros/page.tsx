@@ -4,6 +4,9 @@ import Styles from './Livros.module.scss';
 import TestemunhosSection from './testemunhoSection';
 import Testemunho from './testemunhoSection/testemunho';
 
+// Importando o componente carrousel dinamicamente
+import dynamic from 'next/dynamic';
+
 // Importando imagens e ícones
 import Image from 'next/image';
 import Sol from '../../public/assets/sol.svg';
@@ -12,8 +15,12 @@ import TestemunhoFlavia from '../../public/assets/flavia.webp';
 
 //importação do carrossel de livros
 import 'keen-slider/keen-slider.min.css'
-import KeenSlider from 'keen-slider'
 import SlideCarrousel from './slideCarrousel';
+
+const Carrousel = dynamic(() => import('./slideCarrousel'), {
+  ssr: false,
+  loading: () => <p>Carregando carrossel...</p>,  
+})
 
 
 

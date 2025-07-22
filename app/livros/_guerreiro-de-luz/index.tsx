@@ -28,6 +28,8 @@ export default function GuerreiroPage() {
                 <Button
                     href="https://www.atlanticbookshop.pt/bios/um-guerreiro-de-luz-os-unicos-limites-estao-na-tua-mente"
                     variant='primary'
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Compre o livro
                     <FiChevronsRight className={Styles.buttonIcon} />

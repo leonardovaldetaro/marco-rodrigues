@@ -29,6 +29,8 @@ export default function VidaPage() {
                     <Button
                         href="https://www.atlanticbookshop.pt/nao-ficcao/a-vida-acontece-no-meio-do-amor"
                         variant='primary'
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Compre o livro
                         <FiChevronsRight className={Styles.buttonIcon} />

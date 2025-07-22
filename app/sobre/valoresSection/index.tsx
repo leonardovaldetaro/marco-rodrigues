@@ -21,7 +21,7 @@ export default function ValoresSection() {
                         width={70}
                         height={70}
                     />
-                    <h3 className={Styles.valoresSection__container__content__subtitle}>Valores que o guia</h3>
+                    <h3 className={Styles.valoresSection__container__content__subtitle}>Valores que o guia!</h3>
                     <ol className={Styles.valoresSection__container__content__list}>
                         <li className={Styles.valoresSection__container__content__list__item}>
                             <h4>Amor à Verdade</h4>

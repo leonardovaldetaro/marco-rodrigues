@@ -2,8 +2,8 @@ import Styles from './Book.module.scss';
 import { FiChevronsRight } from "react-icons/fi";
 
 import BookImages from 'next/image';
-import BookCoverGuerreiro from '../../../public/assets/um_guerreiro_de_luz.jpg';
-import BookCoverVida from '../../../public/assets/a_vida_acontece_no_meio_do_amor.jpeg';
+import BookCoverGuerreiro from '../../../public/assets/um_guerreiro_de_luz.webp';
+import BookCoverVida from '../../../public/assets/a_vida_acontece_no_meio_do_amor.webp';
 import Button from '../../_components/button';
 import Link from 'next/link';
 
@@ -15,7 +15,7 @@ export default function BookSection() {
                     <h2 className={Styles.bookSection__title}>Palavras que <br /><span>Transformam</span> Vidas</h2>
                     <h3 className={Styles.bookSection__subtitle}>Histórias reais, coragem autêntica e reflexões transformadoras.</h3>
                     <p className={Styles.bookSection__description}>
-                        Cada livro é um reflexo da jornada de quem ousa sentir, pensar e agir diferente. Aqui, a leitura não é apenas conteúdo — é convite à consciência, coragem e conexão com o que importa. Descubra ideias que tocam, provocam e despertam o essencial em você.
+                        Cada livro é um reflexo da jornada de quem ousa sentir, pensar e agir diferente. Aqui, a leitura não é apenas conteúdo, é convite à consciência, coragem e conexão com o que importa. Descubra ideias que tocam, provocam e despertam o essencial em você.
                     </p>
                     <Button
                         href="/livros"

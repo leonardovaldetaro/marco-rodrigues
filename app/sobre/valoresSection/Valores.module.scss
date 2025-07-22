@@ -53,9 +53,16 @@
             }
 
             &__subtitle {
-                font-size: 24px;
-                font-weight: 700;
+                font-size: $subtitle-size;
+                font-family: $font-primary;
+                text-transform: uppercase;
+                font-weight: 900;
                 margin-bottom: 1em;
+                background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
 
                 @media (max-width: $desktop_sm) {
                     margin-bottom: 4em;

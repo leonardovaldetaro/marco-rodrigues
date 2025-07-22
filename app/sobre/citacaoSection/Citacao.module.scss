@@ -3,7 +3,7 @@
 
 .citacaoSection {
     display: flex;
-    background-color: $brand-golden-50;
+    background-color: $brand-dark-blue;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -26,20 +26,13 @@
         &__title {
             font-size: $title-size;
             font-weight: 900;
-            color: $text-midle;
+            color: $text-light;
             text-align: center;
             position: relative;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 
             @media (max-width: $desktop_sm) {
                 font-size: 2rem;
-            }
-
-            span {
-                background: linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                color: transparent;
             }
 
             &::before {

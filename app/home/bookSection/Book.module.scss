@@ -10,7 +10,7 @@
     column-gap: 5%;
     align-items: center;
     width: 100%;
-    padding: 8em;
+    padding: 8em 0;
 
     @media (max-width: $desktop_sm) {
         padding: 4em 1em;
@@ -29,7 +29,6 @@
         justify-content: center;
         align-items: flex-start;
         width: 50%;
-        max-width: 800px;
 
         @media (max-width: $desktop_sm) {
             width: 100%;
@@ -72,7 +71,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        column-gap: 1em;
+        gap: 1em;
         width: 50%;
 
         @media (max-width: $desktop_sm) {
