@@ -15,7 +15,6 @@ import TestemunhoFlavia from '../../public/assets/flavia.webp';
 
 //importação do carrossel de livros
 import 'keen-slider/keen-slider.min.css'
-import SlideCarrousel from './slideCarrousel';
 
 const Carrousel = dynamic(() => import('./slideCarrousel'), {
   ssr: false,
@@ -52,7 +51,7 @@ export default function LivrosPage() {
         </Testemunho>
       </TestemunhosSection>
       <VidaPage />
-      <SlideCarrousel />
+      <Carrousel />
     </main>
   );
 }
