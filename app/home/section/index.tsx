@@ -1,10 +1,24 @@
 import Styles from './Section.module.scss';
 import Image from 'next/image';
 import Selo from '../../../public/assets/selo.svg';
+import Fundo from '../../../public/assets/marco-rodrigues-coach-business.webp';
 
 export default function Secttion() {
     return (
         <section className={Styles.section}>
+
+            <div className={Styles.section__bg}>
+                <Image
+                    src={Fundo}
+                    alt="" // decorativa
+                    fill
+                    quality={70}
+                    loading="lazy"
+                    sizes="100vw"
+                    style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                />
+            </div>
+            
             <div className={Styles.section__container}>
                 <div className={Styles.section__container__content}>
                     <Image
