@@ -2,11 +2,28 @@ import Link from 'next/link';
 import Styles from './Hero.module.scss';
 import { FaSquareInstagram, FaLinkedin, FaSquareYoutube, FaSquareFacebook } from "react-icons/fa6";
 
+import Image from 'next/image';
+import HeroImage from '../../../public/assets/image-hero-top.webp'; 
 
 
 export default function HeroSection() {
     return (
         <section className={Styles.heroSection}>
+
+            <div className={Styles.heroSection__bg}>
+                <Image
+                    src={HeroImage}
+                    alt=""
+                    fill
+                    priority
+                    placeholder="blur"
+                    style={{
+                        objectFit: 'cover',
+                        objectPosition: '65% center' // Ajuste a posição da imagem conforme necessário
+                    }}
+                />
+            </div>
+
             <div className={Styles.containerHero}>
                 <h1 className={Styles.heroSection__title}>Liderança com propósito.</h1>
                 <h1 className={Styles.heroSection__title}>Inclusão com coragem.</h1>
