@@ -14,6 +14,8 @@ export default function HeroSection() {
                 <Image
                     src={HeroImage}
                     alt=""
+                    fill
+                    quality={100}
                     priority
                     placeholder="blur"
                     style={{
