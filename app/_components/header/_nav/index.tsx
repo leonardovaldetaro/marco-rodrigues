@@ -50,10 +50,13 @@ export default function Nav() {
                             </Link>
                         </li>
                     ))}
-                    <div className={Styles.mobileMenuToggle}>
+                    <li className={Styles.mobileMenuToggle}>
                         <button
                             className={Styles.mobileMenuToggle__button}
                             onClick={toggleMenu} // Alterna o estado do menu ao clicar no botão
+                            aria-haspopup="true"
+                            aria-expanded={isOpen}
+                            aria-label="Abrir menu de navegação"
                         >
                             <span className={Styles.menuOpenArrow}>
                                 Menu
@@ -62,7 +65,7 @@ export default function Nav() {
                                 />
                             </span>
                         </button>
-                    </div>
+                    </li>
                 </ul>
             </nav>
 
@@ -75,6 +78,7 @@ export default function Nav() {
 
             {/* Mobile Nav Menu */}
             <nav
+                aria-label="Menu principal"
                 className={classNames({
                     [Styles.mobileNavMenu]: true,
                     [Styles.visible]: isOpen, // Exibe o menu quando isOpen é true
@@ -89,8 +93,8 @@ export default function Nav() {
                         <MdClose className={Styles.mobileNavMenu__close__icon} />
                     </button>
                 </div>
-                <Link 
-                    href="/" 
+                <Link
+                    href="/"
                     aria-label="Logotipo do header Marco Rodrigues com um símbolo abstrato das letras MR. Este é o link para a página inicial."
                     className={Styles.logoLink}
                     onClick={closeMenu}
