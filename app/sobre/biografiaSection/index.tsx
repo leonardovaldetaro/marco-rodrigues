@@ -9,10 +9,22 @@ export default function BiografiaSection() {
                 <article className={Styles.biografia__container__content}>
                     <h2 className={Styles.biografia__container__content__title}>Biografia</h2>
                     <p className={Styles.biografia__container__content__text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet orci ac ex placerat fringilla. Fusce iaculis odio leo, et ullamcorper massa vehicula in. Aenean mattis leo sit amet neque consectetur commodo. Duis tempor tellus vel risus venenatis, ac molestie diam lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec dapibus ante in urna pulvinar, quis interdum velit imperdiet. Etiam sagittis sollicitudin egestas. Suspendisse imperdiet placerat arcu, id vulputate nisi venenatis nec. Mauris ut metus ut arcu maximus porttitor. Donec dignissim est sed cursus vestibulum. 
+                        Nasceu antes do tempo: com apenas 6 meses e 3 semanas de gestação, o Marco chegou ao mundo a travar a sua primeira grande batalha. Complicações durante o tempo de incubadora resultaram numa Paralisia Cerebral. Durante anos, muitos imaginaram que o seu futuro estaria limitado a uma cadeira de rodas, dependente, sem grande autonomia. 
                     </p>
                     <p className={Styles.biografia__container__content__text}>
-                        Etiam id quam eget nisl sollicitudin fringilla vel in odio. Etiam dolor erat, efficitur vitae consequat vel, rhoncus vel eros. Vestibulum neque magna, fringilla laoreet neque vitae, maximus tincidunt metus. Nulla ante risus, vulputate vitae consectetur sed, cursus vel lacus. Donec auctor semper tellus, et luctus odio vulputate vitae. Proin rutrum dapibus leo. Cras non sem aliquet, pretium quam id, auctor tellus. Fusce est felis, lacinia eu nunc ac, porttitor finibus nisl.
+                        Mas o Marco nunca acreditou nesse destino.
+                    </p>
+                    <p className={Styles.biografia__container__content__text}>
+                        Desafiou as expectativas e formou-se mestre em Engenharia e Gestão Industrial pelo Instituto Superior Técnico. Treina com regularidade no ginásio e construiu uma vida independente, activa e com propósito.
+                    </p>
+                    <p className={Styles.biografia__container__content__text}>
+                        Hoje, dedica-se ao desenvolvimento humano, como coach, orador e mentor. Não fala apenas de superação, vive aquilo que transmite. Acredita que todas as pessoas têm a capacidade de transformar obstáculos em força, dor em direcção e limites em impulso.
+                    </p>
+                    <p className={Styles.biografia__container__content__text}>
+                        Mais do que histórias, partilha vivências reais. Mais do que motivação, oferece presença, clareza e compromisso.
+                    </p>
+                    <p className={Styles.biografia__container__content__text}>
+                        A sua missão é simples, mas profunda: ajudar cada pessoa a descobrir a sua luz interior e, com coragem, trazê-la ao mundo.
                     </p>
                 </article>
                 <figure className={Styles.biografia__container__image}>

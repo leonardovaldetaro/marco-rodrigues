@@ -34,6 +34,10 @@
                 padding-left: 0em;
             }
 
+            &__image {
+                margin-bottom: 1em;
+            }
+
             &__title {
                 font-size: $title-size;
                 font-family: $font-primary;

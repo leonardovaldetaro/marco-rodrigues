@@ -2,6 +2,7 @@ import Footer from './_components/footer';
 import Header from './_components/header';
 import './styles/global.css';
 
+
 export const metadata = {
   title: 'Marco Rodrigues - Coaching e Desenvolvimento Pessoal',
   keywords: 'coaching, desenvolvimento pessoal, autoconhecimento, coaching de vida, coaching de carreira, coaching executivo, coaching de liderança',
