@@ -11,7 +11,6 @@ export default function Secttion() {
                 <Image
                     src={Fundo}
                     alt="" // decorativa
-                    fill
                     quality={70}
                     loading="lazy"
                     sizes="100vw"
