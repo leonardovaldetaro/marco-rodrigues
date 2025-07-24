@@ -21,7 +21,7 @@ export default function ChannelSection() {
 
                 <div className={Styles.channelSection__content__video}>
 
-                    <iframe src="https://www.youtube.com/embed/XxH_pmNN_50?si=I0ipZZZrBIhqMTa-&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/XxH_pmNN_50?si=I0ipZZZrBIhqMTa-&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
 
                 </div>
                 <h3>Descubra o poder da escuta<br />e do encontro verdadeiro.</h3>
