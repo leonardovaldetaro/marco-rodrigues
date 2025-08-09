@@ -12,7 +12,7 @@ export default function ValoresSection() {
                         Um <span>compromisso</span> profundo com a <span>verdade interior</span> e a transformação humana.
                     </h2>
                     <p className={Styles.valoresSection__container__content__text}>
-                        Marco Rodrigues acredita que todo ser humano carrega dentro de si um potencial inato de luz, verdade e coragem muitas vezes obscurecido pelas estruturas externas que nos condicionam. Ao longo da sua caminhada como coach e facilitador de desenvolvimento humano, Marco construiu um caminho baseado em quatro pilares que sustentam sua abordagem:
+                        Marco Rodrigues acredita que todo o Ser-Humano carrega dentro de si um potencial inato de Luz, Verdade e Coragem, muitas vezes, obscurecido pelas estruturas externas que nos condicionam. Ao longo da sua caminhada como coach e facilitador de desenvolvimento humano, Marco construiu um caminho baseado em quatro pilares que sustentam sua a abordagem:
                     </p>
                     <Image
                         src={Estrela}
@@ -21,11 +21,11 @@ export default function ValoresSection() {
                         width={90}
                         height={90}
                     />
-                    <h3 className={Styles.valoresSection__container__content__subtitle}>Valores que o guia!</h3>
+                    <h3 className={Styles.valoresSection__container__content__subtitle}>Valores que o guiam!</h3>
                     <ol className={Styles.valoresSection__container__content__list}>
                         <li className={Styles.valoresSection__container__content__list__item}>
                             <h4>Amor à Verdade</h4>
-                            <p>Marco acredita que o despertar genuíno começa quando temos a coragem de olhar para dentro, acolher nossas sombras e reconhecer o que há de mais verdadeiro em nós. A verdade liberta, direciona e conecta.</p>
+                            <p>Marco acredita que o despertar genuíno começa quando temos a coragem de olhar para dentro, transcender as nossas sombras e reconhecer o que há de mais verdadeiro em nós: A nossa Luz. A Verdade liberta, direciona e conecta.</p>
                         </li>
                         <li className={Styles.valoresSection__container__content__list__item}>
                             <h4>Autenticidade com Propósito</h4>
@@ -50,7 +50,7 @@ export default function ValoresSection() {
                         height={500}
                     />
                     <figcaption className={Styles.valoresSection__container__image__caption}>
-                        Marco Rodrigues Coach em momento de descontração.
+                        Marco Rodrigues em momento de descontração.
                     </figcaption>
                 </figure>
             </div>

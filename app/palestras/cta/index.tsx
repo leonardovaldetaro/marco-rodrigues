@@ -10,7 +10,7 @@ export default function CtaSection() {
                 <p className={Styles.ctaSection__text}>Ética. Valores Humanos. Transparência. Sentido de Vida. Propósito. Equilíbrio emocional.</p>
                 <p className={Styles.ctaSection__text}>Atuação nas áreas empresariais, sociais, escolas, atletas e artistas.</p>
                 <Button
-                        href='/contatos'
+                        href='/palestras/formulario'
                         variant='secondary'
                     >
                         Contratar Palestras

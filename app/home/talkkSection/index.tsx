@@ -7,9 +7,9 @@ export default function TalkSection() {
         <section className={Styles.talkSection}>
             <div className={Styles.containerTalk}>
                 <article className={Styles.talkSection__content}>
-                    <h2 className={Styles.talkSection__content__title}>Palestras e Workshops</h2>
+                    <h2 className={Styles.talkSection__content__title}>Liderança, Palestras e Workshops</h2>
                     <p className={Styles.talkSection__content__text}>
-                        Marco Rodrigues oferece palestras e workshops inspiradores, abordando temas como superação, resiliência e desenvolvimento pessoal.
+                        Marco Rodrigues oferece liderança, palestras e workshops inspiradores, abordando temas como superação, resiliência e desenvolvimento pessoal.
                         Com uma abordagem prática e motivadora, ele compartilha sua jornada de vida e as lições aprendidas ao longo do caminho.
                     </p>
                     <p className={Styles.talkSection__content__text}>
@@ -19,7 +19,7 @@ export default function TalkSection() {
                         href='/palestras'
                         variant='secondary'
                     >
-                        Conheça as minha palestras
+                        Conheça as minhas palestras
                         <FiChevronsRight className={Styles.buttonIcon} />
                     </Button>
                 </article>

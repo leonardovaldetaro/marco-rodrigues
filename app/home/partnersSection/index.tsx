@@ -2,11 +2,11 @@ import Styles from './Partnners.module.scss';
 
 import Image from "next/image";
 import LogoRemax from '../../../public/assets/logo-remaxpt_pb.svg';
-import LogoTedx from '../../../public/assets/tedxLisboa.svg';
-import LogoEdp from '../../../public/assets/edp-energias-de-portugal.svg';
-import LogoDelta from '../../../public/assets/delta-cafes.svg';
-import LogoMonese from '../../../public/assets/monese-logo.svg';
-import LogoNaeyc from '../../../public/assets/national-association-for-the-education-of-young-children.svg';
+import LogoTedx from '../../../public/assets/tedxULisboa.svg';
+import LogoEdp from '../../../public/assets/edpCFactory.webp';
+import LogoBni from '../../../public/assets/BNI-logo.svg';
+import LogoMaleo from '../../../public/assets/maleo.svg';
+import LogoNaeyc from '../../../public/assets/logoPeople.png';
 
 export default function PartnersSection() {
     return (
@@ -38,6 +38,15 @@ export default function PartnersSection() {
                     <Image
                         src={LogoEdp}
                         alt="Logotipo EDP - Energias de Portugal"
+                        width={600}
+                        height={64}
+                        className={Styles.imageContainer__img}
+                    />
+                </div>
+                <div className={Styles.imageContainer}>
+                    <Image
+                        src={LogoBni}
+                        alt="Logotipo da BNI de Portugal"
                         width={250}
                         height={54}
                         className={Styles.imageContainer__img}
@@ -45,24 +54,15 @@ export default function PartnersSection() {
                 </div>
                 <div className={Styles.imageContainer}>
                     <Image
-                        src={LogoDelta}
-                        alt="Logotipo da Delta Café de Portugal"
-                        width={250}
-                        height={54}
-                        className={Styles.imageContainer__img}
-                    />
-                </div>
-                <div className={Styles.imageContainer}>
-                    <Image
-                        src={LogoMonese}
-                        alt="Logotipo da Monese Portugal"
+                        src={LogoMaleo}
+                        alt="Logotipo da Maleo Portugal"
                         className={Styles.imageContainer__img}
                     />
                 </div>
                 <div className={Styles.imageContainer}>
                     <Image
                         src={LogoNaeyc}
-                        alt="Logotipo da National Association for the Education of Young Children"
+                        alt="Logotipo da People - NAEYC"
                         className={Styles.imageContainer__img}
                     />
                 </div>

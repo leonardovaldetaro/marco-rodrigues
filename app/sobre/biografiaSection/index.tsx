@@ -36,7 +36,7 @@ export default function BiografiaSection() {
                         className={Styles.biografia__container__image__img}
                     />
                     <figcaption className={Styles.biografia__container__image__caption}>
-                        Marco Rodrigues Coach
+                        Marco Rodrigues
                     </figcaption>
                 </figure>
             </div>

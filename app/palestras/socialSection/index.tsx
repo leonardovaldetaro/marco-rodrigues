@@ -18,7 +18,7 @@ const socialContent = [
         text: 'É na união, no apoio mútuo e na confiança coletiva que se constrói um caminho de inclusão e progresso.',
     },
     {
-        title: 'Somos todos o Nelson Mandela uns dos outros',
+        title: 'Somos todos um Farol, uns para os outros',
         text: 'Todos temos a capacidade de inspirar, perdoar, transformar e ser farol na vida de quem nos rodeia.',
     }
 ]

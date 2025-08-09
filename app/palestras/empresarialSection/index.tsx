@@ -27,7 +27,7 @@ const empresarialContent = [
         text: 'Capacitar líderes e equipas a enfrentar desafios com flexibilidade, foco e perseverança.',
     },
     {
-        title: 'Ser dá felicidade, o ter vem depois',
+        title: 'O Ser traz felicidade, o ter vem depois',
         text: 'Incentivar uma cultura onde o bem-estar e a realização interior precedem os resultados materiais.',
     },
 ]
