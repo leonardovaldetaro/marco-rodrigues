@@ -4,7 +4,6 @@
 .partnersSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     background-color: #e3e3e3;
 
@@ -27,7 +26,6 @@
 
 .logosContainer {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     column-gap: 4em;
 
@@ -49,6 +47,21 @@
 
     &__img {
         width: 6em;
-    }
+        height: auto;
 
+        &__logoTedx {
+            width: 8em; // Ajuste específico para o logo TEDx
+        }
+
+        &__logoEdp {
+            width: 7em; // Ajuste específico para o logo EDP
+        }
+
+        &__logoBni {
+            width: 3em; // Ajuste específico para o logo BNI
+        }
+        &__logoPeople {
+            width: 5em; // Ajuste específico para o logo People
+        }
+    }
 }

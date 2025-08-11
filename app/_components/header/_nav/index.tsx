@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Styles from "./nav.module.scss";
 import Link from "next/link";
 import LogoHeader from "next/image";
@@ -12,6 +13,7 @@ export default function Nav() {
 
     const [isActive, setActive] = useState(false);
     const [isOpen, setOpen] = useState(false);
+    const pathname = usePathname(); // Captura o path atual
 
     const toggleMenu = () => {
         setOpen(!isOpen);
@@ -33,23 +35,24 @@ export default function Nav() {
         <>
             <nav className={Styles.navbar}>
                 <ul className={Styles.menu}>
-                    {menuItems.map((rota, index) => (
-                        <li className={Styles.menu__item} key={index}>
-                            <Link
-                                href={rota.to}
-                                className={`${Styles.link} ${hoveredItem === rota.label
-                                    ? Styles.active
-                                    : ""
-                                    }`}
-                                onMouseEnter={() =>
-                                    setHoveredItem(rota.label)
-                                }
-                                onMouseLeave={() => setHoveredItem(null)}
-                            >
-                                {rota.label}
-                            </Link>
-                        </li>
-                    ))}
+                    {menuItems.map((rota, index) => {
+                        const isCurrent = pathname === rota.to; // Verifica se é a rota ativa
+                        return (
+                            <li className={Styles.menu__item} key={index}>
+                                <Link
+                                    href={rota.to}
+                                    className={`${Styles.link} ${hoveredItem === rota.label || isCurrent
+                                            ? Styles.active
+                                            : ""
+                                        }`}
+                                    onMouseEnter={() => setHoveredItem(rota.label)}
+                                    onMouseLeave={() => setHoveredItem(null)}
+                                >
+                                    {rota.label}
+                                </Link>
+                            </li>
+                        );
+                    })}
                     <li className={Styles.mobileMenuToggle}>
                         <button
                             className={Styles.mobileMenuToggle__button}

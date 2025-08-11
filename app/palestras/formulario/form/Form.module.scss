@@ -159,8 +159,8 @@
 
   &__groupTermos {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 2rem;
 
     label {
@@ -171,25 +171,36 @@
         margin-right: 0.5rem;
       }
     }
+
+    &__link {
+      color: $color-complements;
+      text-decoration: underline;
+      font-size: 0.8em;
+      margin-top: 0.5rem;
+
+      &:hover {
+        color: $brand-golden;
+      }
+    }
   }
 
   &__button {
     align-items: center;
-    background-color: $brand-golden;
     border-radius: 0.5em;
+    background-color: $brand-golden;
     color: $text-dark;
-    border: none;
     cursor: pointer;
     display: flex;
     font-size: 1.2em;
-    padding: 0.5em 1.3em;
+    padding: 0.3em 1em;
     text-decoration: none;
     transition: transform 0.4s ease;
+    border: none;
 
     &:hover {
       transform: scale(1.1);
       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
-
+      border: none;
     }
   }
 }

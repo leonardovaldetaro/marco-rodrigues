@@ -57,8 +57,13 @@
     transition: width 0.3s ease;
   }
 
-  &:hover::after {
-    width: 100%; // Aparece ao passar o mouse
+  &:hover,
+  &.active {
+    color: $color-complements;
+
+    &::after {
+      width: 100%; // Aparece ao passar o mouse
+    }
   }
 }
 
@@ -186,7 +191,7 @@
 
     @media (max-width: $desktop_sm) {
       width: 160px;
-      
+
     }
   }
 }

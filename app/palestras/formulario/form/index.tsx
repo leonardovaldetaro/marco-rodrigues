@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import Styles from './Form.module.scss'
 import { useState } from 'react'
 
@@ -134,11 +135,11 @@ export default function ContatoPalestras() {
                     <div className={Styles.form__groupDadosPessoais}>
                         <div className={Styles.form__groupDadosPessoais__groupNome}>
                             <label htmlFor="nome">Nome<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                            <input 
-                                type="text" 
-                                id="nome" 
-                                name="nome" 
-                                value={formData.nome} 
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                value={formData.nome}
                                 onChange={handleChange}
                                 placeholder='Digite o seu nome aqui.'
                             />
@@ -147,11 +148,11 @@ export default function ContatoPalestras() {
                         {/* Apelido */}
                         <div className={Styles.form__groupDadosPessoais__groupApelido}>
                             <label htmlFor="apelido">Apelido<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                            <input 
-                                type="text" 
-                                id="apelido" 
-                                name="apelido" 
-                                value={formData.apelido} 
+                            <input
+                                type="text"
+                                id="apelido"
+                                name="apelido"
+                                value={formData.apelido}
                                 onChange={handleChange}
                                 placeholder='Aqui, o seu apelido.'
                             />
@@ -163,11 +164,11 @@ export default function ContatoPalestras() {
                     {/* Nome da Empresa */}
                     <div className={Styles.form__group}>
                         <label htmlFor="nomeEmpresa">Nome da Empresa<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                        <input 
-                            type="text" 
-                            id="nomeEmpresa" 
-                            name="nomeEmpresa" 
-                            value={formData.nomeEmpresa} 
+                        <input
+                            type="text"
+                            id="nomeEmpresa"
+                            name="nomeEmpresa"
+                            value={formData.nomeEmpresa}
                             onChange={handleChange}
                             placeholder='Digite o seu da sua empresa.'
                         />
@@ -177,11 +178,11 @@ export default function ContatoPalestras() {
                     {/* Site URL */}
                     <div className={Styles.form__group}>
                         <label htmlFor="siteUrl">Website<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                        <input 
-                            type="url" 
-                            id="siteUrl" 
-                            name="siteUrl" 
-                            value={formData.siteUrl} 
+                        <input
+                            type="url"
+                            id="siteUrl"
+                            name="siteUrl"
+                            value={formData.siteUrl}
                             onChange={handleChange}
                             placeholder='https://www.seusite.com'
                         />
@@ -191,13 +192,13 @@ export default function ContatoPalestras() {
                     {/* Email */}
                     <div className={Styles.form__group}>
                         <label htmlFor="email">Email<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            value={formData.email} 
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
                             onChange={handleChange}
-                            placeholder='Digite o seu melhor email aqui.'   
+                            placeholder='Digite o seu melhor email aqui.'
                         />
                         {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
                     </div>
@@ -210,10 +211,10 @@ export default function ContatoPalestras() {
                     {/* Tipo de Evento */}
                     <div className={Styles.form__groupTipoEvento}>
                         <label htmlFor="tipoEvento">Para qual tipo de evento gostarias de contratar-me?<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                        <select 
-                            id="tipoEvento" 
-                            name="tipoEvento" 
-                            value={formData.tipoEvento} 
+                        <select
+                            id="tipoEvento"
+                            name="tipoEvento"
+                            value={formData.tipoEvento}
                             onChange={handleChange}
                         >
                             <option value="">Selecione</option>
@@ -227,12 +228,12 @@ export default function ContatoPalestras() {
 
                     {/* Como conheceu */}
                     <div className={Styles.form__group}>
-                        <label htmlFor="comoConheceu">Conte-me,Como conheceu o Marco?</label><br />
-                        <textarea 
-                            id="comoConheceu" 
-                            name="comoConheceu" 
-                            rows={3} 
-                            value={formData.comoConheceu} 
+                        <label htmlFor="comoConheceu">Conte-me, como conheceu o Marco?</label><br />
+                        <textarea
+                            id="comoConheceu"
+                            name="comoConheceu"
+                            rows={3}
+                            value={formData.comoConheceu}
                             onChange={handleChange}
                             placeholder='Através de um amigo, redes sociais, site, pessoalmente, etc.'
                         />
@@ -241,11 +242,11 @@ export default function ContatoPalestras() {
                     {/* Mensagem */}
                     <div className={Styles.form__group}>
                         <label htmlFor="mensagem">Mensagem<span style={{ color: requiredStyle }}>*</span>:</label><br />
-                        <textarea 
-                            id="mensagem" 
-                            name="mensagem" 
-                            rows={5} 
-                            value={formData.mensagem} 
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows={5}
+                            value={formData.mensagem}
                             onChange={handleChange}
                             placeholder='Escreva-me aqui a sua mensagem ou uma solicitação específica.'
                         />
@@ -258,6 +259,9 @@ export default function ContatoPalestras() {
                             <input type="checkbox" name="concordaTermos" checked={formData.concordaTermos} onChange={handleChange} />
                             Concordo com os termos e condições<span style={{ color: requiredStyle }}>*</span>
                         </label>
+                        <Link href="/termoDeUso" target="_blank" rel="noopener noreferrer" className={Styles.form__groupTermos__link}>
+                            Leia os termos e condições aqui.
+                        </Link>
                         {errors.concordaTermos && <p style={{ color: 'red' }}>{errors.concordaTermos}</p>}
                     </div>
 

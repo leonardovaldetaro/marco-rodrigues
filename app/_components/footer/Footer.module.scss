@@ -5,14 +5,15 @@
     background-color: $text-dark;
     width: 100%;
     display: flex;
-    align-items: center;
-    padding: 1em;
+    padding: 1em 0;
 
     &__container {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 2em;
         width: 100%;
 
 
@@ -20,23 +21,73 @@
             flex-direction: column;
         }
 
-        &__lvtext {
+        &__termo {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: .5em;
+            flex-direction: column;
+            color: $text-light;
+            width: 50%;
 
             @media (max-width: $desktop_sm) {
-                margin-top: 1em;
+                margin-bottom: 0.5em;
+                width: 100%;
+            }
+
+            p {
+                color: $text-light;
+                font-family: "Spectral", serif;
+                font-size: .8em;
+                font-weight: 300;
+                letter-spacing: 0.03em;
+
+                @media (max-width: $desktop_sm) {
+                    text-align: center;
+                }
+            }
+
+            &__link {
+                color: $text-light;
+                text-decoration: underline;
+                font-family: "Spectral", serif;
+                font-size: 0.8em;
+                margin-top: 0.5em;
+                align-self: start;
+
+                @media (max-width: $desktop_sm) {
+                    text-align: center;
+                }
+
+                &:hover {
+                    color: $color-complements;
+                }
             }
         }
 
-        p {
-            color: $text-light;
-            font-family: "Spectral", serif;
-            font-size: .8em;
-            font-weight: 400;
-            letter-spacing: 0.03em;
+        &__lvtext {
+            display: flex;
+            flex-direction: row;
+            gap: .5em;
+            height: auto;
+
+            @media (max-width: $desktop_sm) {
+                margin-top: 1em;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 1.5em;
+            }
+
+            p {
+                color: $text-light;
+                font-family: "Spectral", serif;
+                font-size: .7em;
+                font-weight: 300;
+                letter-spacing: 0.03em;
+                margin-top: 3px;
+            }
+
+            a {
+                display: flex;
+                align-self: flex-start;
+            }
         }
     }
 }

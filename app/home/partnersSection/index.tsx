@@ -8,6 +8,8 @@ import LogoBni from '../../../public/assets/BNI-logo.svg';
 import LogoMaleo from '../../../public/assets/maleo.svg';
 import LogoNaeyc from '../../../public/assets/logoPeople.png';
 
+import classNames from 'classnames';
+
 export default function PartnersSection() {
     return (
         <section className={Styles.partnersSection}>
@@ -20,36 +22,37 @@ export default function PartnersSection() {
                     <Image
                         src={LogoRemax}
                         alt="Logotipo da Remax Portugal"
-                        width={250}
-                        height={54}
                         className={Styles.imageContainer__img}
                     />
                 </div>
                 <div className={Styles.imageContainer}>
                     <Image
                         src={LogoTedx}
-                        alt="Logotipo da TEDx Lisboa"
-                        width={250}
-                        height={54}
-                        className={Styles.imageContainer__img}
+                        alt="Logotipo da TEDx U Lisboa"
+                        className={classNames({
+                            [Styles.imageContainer__img]: true,
+                            [Styles.imageContainer__img__logoTedx]: true, // Adiciona uma classe específica para o logo tedx
+                        })}
                     />
                 </div>
                 <div className={Styles.imageContainer}>
                     <Image
                         src={LogoEdp}
                         alt="Logotipo EDP - Energias de Portugal"
-                        width={600}
-                        height={64}
-                        className={Styles.imageContainer__img}
+                        className={classNames({
+                            [Styles.imageContainer__img]: true,
+                            [Styles.imageContainer__img__logoEdp]: true, // Adiciona uma classe específica para o logo EDP
+                        })}
                     />
                 </div>
                 <div className={Styles.imageContainer}>
                     <Image
                         src={LogoBni}
                         alt="Logotipo da BNI de Portugal"
-                        width={250}
-                        height={54}
-                        className={Styles.imageContainer__img}
+                        className={classNames({
+                            [Styles.imageContainer__img]: true,
+                            [Styles.imageContainer__img__logoBni]: true, // Adiciona uma classe específica para o logo BNI
+                        })}
                     />
                 </div>
                 <div className={Styles.imageContainer}>
@@ -63,7 +66,10 @@ export default function PartnersSection() {
                     <Image
                         src={LogoNaeyc}
                         alt="Logotipo da People - NAEYC"
-                        className={Styles.imageContainer__img}
+                        className={classNames({
+                            [Styles.imageContainer__img]: true,
+                            [Styles.imageContainer__img__logoPeople]: true, // Adiciona uma classe específica para o logo BNI
+                        })}
                     />
                 </div>
             </div>
