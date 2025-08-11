@@ -10,12 +10,15 @@ export default function Footer() {
                     <p className={Styles.footer__container__termo__text}>
                         © {new Date().getFullYear()} Marco Rodrigues. Todos os direitos reservados. As imagens e conteúdos deste site são de uso exclusivo e protegidos por direitos autorais e de imagem. É proibida qualquer reprodução sem autorização.
                     </p>
-                    <Link href="/termoDeUso" className={Styles.footer__container__termo__link}>
+                    <Link href="/termo-de-uso" className={Styles.footer__container__termo__link}>
                         Termos de Uso e Política de Privacidade
                     </Link>
                 </div>
                 <div className={Styles.footer__container__lvtext}>
-                    <Link href="/" className={Styles.lvLink}>
+                    <a href="https://hamburger-manu.vercel.app" 
+                        className={Styles.lvLink}
+                        target="_blank"
+                    >
                         <Image
                             src="/assets/LVsimbol.svg"
                             alt="Leonardo Valdetaro Logo"
@@ -23,7 +26,7 @@ export default function Footer() {
                             height={24}
                             className={Styles.lvLink__logo}
                         />
-                    </Link>
+                    </a>
                     <p>Desenvolvido por Leonardo Valdetaro.</p>
                 </div>
             </div>

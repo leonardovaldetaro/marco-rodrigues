@@ -54,6 +54,8 @@
 
                 @media (max-width: $desktop_sm) {
                     text-align: center;
+                    align-self: center;
+                    margin-top: 1rem;
                 }
 
                 &:hover {
@@ -87,6 +89,10 @@
             a {
                 display: flex;
                 align-self: flex-start;
+
+                @media (max-width: $desktop_sm) {
+                    align-self: center;
+                }
             }
         }
     }
