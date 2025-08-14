@@ -13,6 +13,9 @@ export default function Footer() {
                     <Link href="/termo-de-uso" className={Styles.footer__container__termo__link}>
                         Termos de Uso e Política de Privacidade
                     </Link>
+                    <Link href="/acessibilidade" className={Styles.footer__container__termo__link}>
+                        Declaração de Acessibilidade
+                    </Link>
                 </div>
                 <div className={Styles.footer__container__lvtext}>
                     <a href="https://hamburger-manu.vercel.app" 

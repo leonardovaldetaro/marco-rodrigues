@@ -2,7 +2,7 @@ export async function GET() {
   const content = `User-agent: *
 Allow: /
 
-Sitemap: https://marco-rodrigues.vercel.app/sitemap.xml
+Sitemap: https://www.marcorodriguescoaching.pt/sitemap.xml
 `;
 
   return new Response(content, {
