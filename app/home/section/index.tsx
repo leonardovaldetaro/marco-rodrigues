@@ -7,7 +7,7 @@ export default function Secttion() {
     return (
         <section className={Styles.section}>
 
-            <div className={Styles.section__bg}>
+            <div className={Styles.section__bg} style={{backgroundColor: '#002259'}}>
                 <Image
                     src={Fundo}
                     alt="" // decorativa

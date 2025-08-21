@@ -10,11 +10,11 @@ export default function ContatoPalestras() {
         nomeEmpresa: '',
         siteUrl: '',
         email: '',
-        telefone: '', // honeypot
         tipoEvento: '',
         comoConheceu: '',
         mensagem: '',
-        concordaTermos: false
+        concordaTermos: false, // <-- boolean
+        telefone: '' // honeypot
     })
 
     const [errors, setErrors] = useState<{ [key: string]: string }>({})
@@ -24,15 +24,15 @@ export default function ContatoPalestras() {
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
     ) => {
-        const { name, value, type } = e.target
+        const { name, value, type } = e.target;
 
         if (type === 'checkbox') {
-            const target = e.target as HTMLInputElement
-            setFormData(prev => ({ ...prev, [name]: target.checked }))
+            const target = e.target as HTMLInputElement;
+            setFormData(prev => ({ ...prev, [name]: target.checked }));
         } else {
-            setFormData(prev => ({ ...prev, [name]: value }))
+            setFormData(prev => ({ ...prev, [name]: value }));
         }
-    }
+    };
 
     const validate = () => {
         const newErrors: { [key: string]: string } = {}
@@ -87,36 +87,36 @@ export default function ContatoPalestras() {
         setErrors({})
 
         try {
-            const response = await fetch('/api/palestras', {
-                method: 'POST',
+            const response = await fetch("/api/palestras", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json",
                 },
-                body: JSON.stringify(formData)
-            })
+                body: JSON.stringify(formData),
+            });
 
-            const result = await response.json()
-            setShowModal(true)
+            const result = await response.json();
 
-            if (result.status === 'sucesso') {
+            if (result.status === "sucesso") {
+                setShowModal(true);
                 setFormData({
                     nome: '',
                     apelido: '',
                     nomeEmpresa: '',
                     siteUrl: '',
                     email: '',
-                    telefone: '',
                     tipoEvento: '',
                     comoConheceu: '',
                     mensagem: '',
-                    concordaTermos: false
-                })
+                    concordaTermos: false, // <-- boolean
+                    telefone: '' // honeypot
+                });
             } else {
-                alert('Erro ao enviar: ' + result.mensagem)
+                alert("Erro ao enviar: " + result.mensagem);
             }
         } catch (err) {
-            console.error('Erro ao enviar:', err)
-            alert('Erro de conexão. Tente novamente.')
+            console.error("Erro ao enviar:", err);
+            alert("Erro de conexão. Tente novamente.");
         }
 
         setIsSubmitting(false)
@@ -277,11 +277,54 @@ export default function ContatoPalestras() {
             </div>
 
             {showModal && (
-                <div className={Styles.modalOverlay}>
-                    <div className={Styles.modalContent}>
-                        <h2>Mensagem enviada com sucesso!</h2>
-                        <p>Obrigado! Em breve retornarei o seu contacto.</p>
-                        <button onClick={() => setShowModal(false)}>Fechar</button>
+                <div style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100vw',
+                    height: '100vh',
+                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    zIndex: 9999
+                }}>
+                    <div style={{
+                        backgroundColor: '#fff',
+                        padding: '2rem',
+                        borderRadius: '8px',
+                        maxWidth: '90%',
+                        textAlign: 'center',
+                        boxShadow: '0 0 20px rgba(0,0,0,0.3)'
+                    }}>
+                        <h2 style={{
+                            marginBottom: '1rem',
+                            fontSize: '1.6rem',
+                            fontWeight: 'bold'
+                        }}>
+                            Mensagem enviada com sucesso!
+                        </h2>
+                        <p style={{
+                            marginBottom: '1rem',
+                            fontSize: '1.2rem',
+                            color: '#1f1f1f',
+                            textAlign: 'center'
+                        }}>
+                            Obrigado por sua mensagem.<br />Em breve retornarei o seu contacto.
+                        </p>
+                        <button onClick={() => setShowModal(false)} style={{
+                            marginTop: '1rem',
+                            padding: '1rem 1.5rem',
+                            fontSize: '1.2rem',
+                            fontWeight: '700',
+                            background: 'linear-gradient(90deg, rgb(0, 43, 115) 0%, rgb(127, 5, 37) 100%)',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '4px',
+                            cursor: 'pointer'
+                        }}>
+                            Fechar
+                        </button>
                     </div>
                 </div>
             )}
