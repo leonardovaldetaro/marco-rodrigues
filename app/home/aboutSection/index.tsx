@@ -16,7 +16,7 @@ export default function AboutSection() {
                 <article className={Styles.aboutSection__content}>
                     <Image
                         src={SunLogo}
-                        alt="Ilustração de apoio ao Logotipo Marco Rodrigues, o Sol"
+                        alt="o Sol, ilustração de apoio ao Logotipo Marco Rodrigues Coaching."
                         width={100}
                         height={100}
                         className={Styles.aboutSection__content__icone}
@@ -25,7 +25,7 @@ export default function AboutSection() {
                         <BsDashLg className={Styles.aboutSection__content__tag__icon} />
                         A Jornada de Marco Rodrigues
                     </span>
-                    <h2 className={Styles.aboutSection__content__title}>Da imobilidade à<br /> <span>liberdade</span> interior</h2>
+                    <h2 className={Styles.aboutSection__content__title}>Da imobilidade à <span>liberdade</span> interior</h2>
                     <p className={Styles.aboutSection__content__text}>Nascido prematuro, com apenas 6 meses e 3 semanas, Marco enfrentou desde o início o maior desafio da sua vida: uma Paralisia Cerebral causada por complicações durante o período de incubadora.</p>
                     <p className={Styles.aboutSection__content__text}>Muitos o imaginaram preso a uma cadeira de rodas, limitado em movimento e autonomia. Mas Marco escolheu outro caminho.</p>
                     <p className={Styles.aboutSection__content__text}>Tornou-se mestre em Engenharia e Gestão Industrial pelo Instituto Superior Técnico, treina regularmente no ginásio e vive com independência e determinação.</p>
@@ -44,7 +44,7 @@ export default function AboutSection() {
 
                 <Image
                     src={AboutImage}
-                    alt="Marco Rodrigues coach, sorrindo e olhando para a câmera"
+                    alt="Marco Rodrigues coach. Adulto, tem 32 anos. Ele está usando uma camisa social de botões, aberta no primeiro botão, ele usa óculos, barba serrada por fazer, cabelos curto. Ele está sorrindo e olhando para a câmera em um ambiente de bar com muitas luzes desfocadas ao fundo."
                     className={Styles.aboutSection__image}
                 />
             </div>

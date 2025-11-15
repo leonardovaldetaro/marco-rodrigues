@@ -29,6 +29,7 @@ export default function Nav() {
         { label: "Sobre", to: "/sobre" },
         { label: "Palestras", to: "/palestras" },
         { label: "Livros", to: "/livros" },
+        { label: "Blog", to: "/blog" },
         { label: "Contactos", to: "/contactos" },
     ];
     return (

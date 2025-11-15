@@ -259,8 +259,8 @@ export default function ContatoPalestras() {
                             <input type="checkbox" name="concordaTermos" checked={formData.concordaTermos} onChange={handleChange} />
                             Concordo com os termos e condições<span style={{ color: requiredStyle }}>*</span>
                         </label>
-                        <Link href="/termoDeUso" target="_blank" rel="noopener noreferrer" className={Styles.form__groupTermos__link}>
-                            Leia os termos e condições aqui.
+                        <Link href="/termo-de-uso" rel="noopener noreferrer" className={Styles.form__groupTermos__link}>
+                            Leia os termos e condições aqui. 
                         </Link>
                         {errors.concordaTermos && <p style={{ color: 'red' }}>{errors.concordaTermos}</p>}
                     </div>

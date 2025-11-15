@@ -26,7 +26,11 @@ export default function Secttion() {
                         alt="Logotipo Marco Rodrigues em formato selo com dizeres Liderança com propósito, Inclusão com coragem"
                         className={Styles.section__container__content__selo}
                     />
-                    <h2 className={Styles.section__container__content__title}>Os únicos limites estão na tua mente.</h2>
+                    <blockquote 
+                        className={Styles.section__container__content__title}>
+                            Os únicos limites estão na tua mente.<br />
+                            <cite>Marco Rodrigues</cite>
+                    </blockquote>
                 </div>
             </div>
         </section>

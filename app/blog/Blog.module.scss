@@ -5,59 +5,63 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    padding: 8em 0;
+    padding: 10em 0;
+    margin: 0 auto;
     width: 100%;
-    max-width: 1440px;
-    background-color: $brand-dark-blue;
 
-    &__title {
-        font-size: 2.5em;
-        color: $text-dark;
-        margin-bottom: 1em;
-        color: $text-light;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: space-around;
-        gap: 2em;
+    &__spacer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5em;
+        align-items: center;
+        margin-bottom: 4em;
+        padding: 0 8em;
         width: 100%;
         max-width: 1440px;
-        padding: 0 8em;
 
-        @media (max-width: $desktop_sm) {
+        &__image {
+            grid-column: 1 / span 1;
+            width: 100%;
+            height: auto;
+            align-self: start;
+        }
+
+        &__container {
+            grid-column: 2 / span 1;
+            display: flex;
             flex-direction: column;
-        }
+            justify-items: start;
+            width: 100%;
 
-        @media (max-width: $desktop_sm) {
-            padding: 2em 1em;
-        }
+            &__title {
+                grid-column: 2 / span 1;
+                grid-row: 2;
+                justify-self: start;
+                text-align: left;
+                font-size: 1.6em;
+                font-weight: 900;
+                color: $text-dark;
+                margin-bottom: 0.5em;
+                text-transform: uppercase;
+            }
 
-        &__item {
-            padding: 1em;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
-            width: 33.333333%;
-
-            @media (max-width: $desktop_sm) {
+            &__text {
+                grid-column: 2 / span 1;
+                grid-row: 3;
+                justify-self: start;
+                text-align: left;
+                font-size: 1.2em;
+                font-weight: 600;
+                color: $text-dark;
+                font-family: $font-secondary;
+                margin-bottom: 2em;
                 width: 100%;
             }
 
-            &__title {
-                font-size: 1.5em;
-                color: $text-light;
-                margin-bottom: 0.5em;
-            }
-
-            &__excerpt {
-                font-size: 1em;
-                color: $text-light;
-                margin-bottom: 1em;
-            }
-
-            &__date {
-                font-size: 0.875em;
-                color: $text-light;
+            &__icone {
+                grid-column: 2 / span 1;
+                grid-row: 1;
+                justify-self: start;
             }
         }
     }

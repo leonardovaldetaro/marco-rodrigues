@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Styles from './Button.module.scss';
 
 
@@ -25,14 +26,14 @@ export default function Button({
 
   if (href) {
     return (
-      <a
+      <Link
         href={href}
         target={target}
         rel={rel}
         className={className}
       >
         {children}
-      </a>
+      </Link>
     );
   }
 

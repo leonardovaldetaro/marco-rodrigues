@@ -12,7 +12,7 @@ export default function BookSection() {
         <section className={Styles.bookSection}>
             <div className={Styles.containerBook}>
                 <article className={Styles.bookSection__content}>
-                    <h2 className={Styles.bookSection__title}>Palavras que <br /><span>Transformam</span> Vidas</h2>
+                    <h2 className={Styles.bookSection__title}>Palavras que <span>Transformam</span> Vidas</h2>
                     <h3 className={Styles.bookSection__subtitle}>Histórias reais, coragem autêntica e reflexões transformadoras.</h3>
                     <p className={Styles.bookSection__description}>
                         Cada livro é um reflexo da jornada de quem ousa sentir, pensar e agir diferente. Aqui, a leitura não é apenas conteúdo, é convite à consciência, coragem e conexão com o que importa. Descubra ideias que tocam, provocam e despertam o essencial em você.
@@ -21,7 +21,7 @@ export default function BookSection() {
                         href="/livros"
                         variant='primary'
                     >
-                        Leia as sinópses
+                        Leia as sinópses dos livros
                         <FiChevronsRight className={Styles.buttonIcon} />
                     </Button>
                 </article>
