@@ -2,8 +2,11 @@
 @import '../../../styles/breakpoints';
 
 .recentesSection {
+
     // adiciona box-sizing global dentro deste bloco
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
         box-sizing: border-box;
     }
 
@@ -14,6 +17,10 @@
     max-width: 1440px;
     padding: 0 7em;
     margin-bottom: 4em;
+
+    @media (max-width: $desktop_sm) {
+        padding: 0 1em;
+    }
 
     &__listContainer {
         display: flex;
@@ -40,7 +47,7 @@
             }
 
             @media (max-width: $desktop_sm) {
-                padding: 2em 1em;
+                padding: 2em 0;
             }
 
             &__title {
@@ -70,7 +77,8 @@
 
                 /* força imagens internas a não ultrapassarem o card */
                 img,
-                .next-image, /* caso use wrapper/custom class */
+                .next-image,
+                /* caso use wrapper/custom class */
                 .image {
                     max-width: 100%;
                     height: auto;
@@ -111,7 +119,7 @@
 }
 
 .loadMoreWrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
