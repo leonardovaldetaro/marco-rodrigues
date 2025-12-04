@@ -2,11 +2,11 @@ import RecentesSection from './_components/recentesSection';
 import Styles from './Blog.module.scss';
 import Image from "next/image";
 import SunLogo from '../../public/assets/sol.svg';
-import BlogImage from '../../public/assets/imageBlog.webp';
-import { getAllPosts } from '../lib/posts'; // ajuste o caminho conforme teu alias ou relative
+import BlogImage from '../../public/assets/MarcoRodriguesImageBlog.webp';
+import { getAllPosts } from '../lib/posts';
 
 export default function BlogPage() {
-  const posts = getAllPosts(); // executa no servidor, pode usar fs sem problema
+  const posts = getAllPosts();
 
   return (
     <section className={Styles.blogPage}>
