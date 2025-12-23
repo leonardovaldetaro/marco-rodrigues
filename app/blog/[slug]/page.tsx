@@ -16,8 +16,9 @@ export async function generateMetadata({ params }) {
   const post = await getPostBySlug(params.slug)
   if (!post) return {}
   return {
-    title: post.title,
+    title: `${post.title} | Marco Rodrigues Coach`,
     description: post.excerpt,
+    keywords: post.tags,
   }
 }
 

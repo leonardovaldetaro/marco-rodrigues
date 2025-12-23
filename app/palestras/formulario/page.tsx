@@ -2,11 +2,17 @@ import Styles from './Formulario.module.scss';
 import Image from 'next/image';
 import Estrela from '../../../public/assets/estrelaBranca.svg';
 import ContatoPalestras from './form';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Contratação de Palestras, Marco Rodrigues, Desenvolvimento Pessoal',
+    description: 'Peça informações para contratar as palestras de desenvolvimento pessoal e profissional com Marco Rodrigues.',
+}
 
 export default function FormularioPage() {
-  return (
-    <section className={Styles.formContent}>
-            <Image 
+    return (
+        <section className={Styles.formContent}>
+            <Image
                 src={Estrela}
                 alt="Imagem da estrela que o guia Marco Rodrigues"
                 className={Styles.formContent__image}
@@ -20,5 +26,5 @@ export default function FormularioPage() {
                 <ContatoPalestras />
             </div>
         </section>
-  )
+    )
 }

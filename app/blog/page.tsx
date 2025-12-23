@@ -4,6 +4,12 @@ import Image from "next/image";
 import SunLogo from '../../public/assets/sol.svg';
 import BlogImage from '../../public/assets/MarcoRodriguesImageBlog.webp';
 import { getAllPosts } from '../lib/posts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog de Desenvolvimento Pessoal e Profissional de Marco Rodrigues',
+  description: 'Artigos sobre desenvolvimento pessoal e profissional por Marco Rodrigues, com reflexões práticas sobre propósito, evolução e ação.',
+}
 
 export default function BlogPage() {
   const posts = getAllPosts();

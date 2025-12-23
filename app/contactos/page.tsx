@@ -2,12 +2,18 @@ import Styles from './Contact.module.scss';
 import ContactForm from './form';
 import Image from 'next/image';
 import Onda from '../../public/assets/ondaBranca.svg';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Entre em Contacto - Desenvolvimento Pessoal e Profissional com Marco Rodrigues',
+    description: 'Contacte Marco Rodrigues para informações sobre palestras, mentorias e desenvolvimento pessoal e profissional.',
+}
 
 export default function Contact() {
 
     return (
         <section className={Styles.formContent}>
-            <Image 
+            <Image
                 src={Onda}
                 alt="Imagem de contacto"
                 className={Styles.formContent__image}

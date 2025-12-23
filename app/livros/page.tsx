@@ -3,6 +3,12 @@ import GuerreiroPage from './_guerreiro-de-luz';
 import Styles from './Livros.module.scss';
 import TestemunhosSection from './testemunhoSection';
 import Testemunho from './testemunhoSection/testemunho';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Livros de Desenvolvimento Pessoal e Profissional de Marco Rodrigues',
+  description: 'Conheça os livros de Marco Rodrigues sobre desenvolvimento pessoal e profissional, com conteúdo prático para evolução real.',
+}
 
 // Importando imagens e ícones
 import Image from 'next/image';
